@@ -18,7 +18,7 @@ body {
 
 		header {
 			background: #000;
-			height: 80px;
+			height: 100px;
 
 			.container {
 				/*background: #DADADA;*/
@@ -27,24 +27,37 @@ body {
 				margin: 50px auto;
 
 				img {
-
+					padding: 20px 0;
+					/*margin-left: 10%;*/
 				}
 
 				ul {
 					list-style-type: none;
 					float: right;
-					margin-right: 10%;
+					/*margin-right: 10%;*/
 					li {
-						display: inline-block;	
+						display: inline-block;
+
+						&:hover {
+
+							&::after {
+								content: '';
+								display: block;
+								margin-top: -5px;
+								border-bottom: 5px solid #B28657;
+							}
+						}
 						a {
 							text-decoration: none;
 							text-transform: uppercase;
 							display: block;
-							line-height: 80px;
+							line-height: 100px;
+							padding: 0 10px;
 							color: #fff;
 							font-size: 0.8em;
 							font-weight: 999;
-							letter-spacing: .1em;
+							/*letter-spacing: .1em;*/
+							word-spacing: .2em;
 						}
 					}
 
@@ -53,7 +66,21 @@ body {
 
 			.container-nav {
 				margin-top: 0;
+				padding: 0 10%;
+			}
+		}
+
+		.hero {
+			height: 600px;
+			background: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4bbb31a47384880bb5d5c292e4b401d&auto=format&fit=crop&w=1300&q=60") 0/cover;
+			/*object-fit: none;*/
+			
+			.layer {
+				background: rgba(0, 0, 0, .75);
+				height: 600px;
 			}
 		}
 	}
 }
+
+/* center 0/cover; */
