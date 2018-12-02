@@ -43,7 +43,7 @@ body {
 	background: #0E0E0E;
 
 	.main {
-		background: #C0C0C0;
+		background: #fff;
 		/*width: 1300px;*/
 		width: 100%;
 
@@ -107,6 +107,7 @@ body {
 			height: 600px;
 			background: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4bbb31a47384880bb5d5c292e4b401d&auto=format&fit=crop&w=1300&q=60") 0/cover;
 			/*object-fit: none;*/
+			object-fit: cover;
 			
 			.layer {
 				background: rgba(0, 0, 0, .75);
@@ -239,10 +240,10 @@ body {
 
 		.services {
 			background: #000;
-			padding: 4% 0;
+			padding-bottom: 55px;
 			
 			.services-head {
-				padding-bottom: 40px;
+				padding: 40px 0;
 				text-align: center;
 				text-transform: uppercase;
 				font-weight: bold;
@@ -297,6 +298,7 @@ body {
 // OUR PROJECTS
 		.our-projects {
 			 background: #fff;
+			 margin-bottom: 55px;
 
 			.our-projects-head {
 				padding: 40px 0;
@@ -474,6 +476,64 @@ body {
 				&:focus{
 					outline-style: none;
 				}
+			}
+		}
+
+// OUR TEAM
+
+		.our-team-background {
+			min-height: 100vh;
+			background: url('../images/our_team_background-awax.png');
+			/*object-fit: cover;*/
+			background-size: cover;
+			background-position: center;
+
+			.our-team-head {
+				padding: 40px 0;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+
+				h2 {
+					color: #fff;
+				}
+					
+				p {
+					padding-top: 10px;
+					font-size: .8em;
+					color: #C0C0C0;
+				}
+			}
+
+			.our-team-container {
+				width: 100%;
+				margin-top: 20px;
+				padding: 0 10%;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.our-team-card {
+				height: 430px;
+				width: 330px;
+				margin: 0;
+				background: #fff;
+				text-align: center;
+
+				h3 {
+					text-transform: uppercase;
+					font-size: 1.3em;
+					letter-spacing: .1em;
+					line-height: 40px;
+				}
+
+				p {
+				
+				}
+			}
+
+			.our-team-img {
+				margin: 50px auto;
 			}
 		}
 	}
