@@ -43,7 +43,7 @@ body {
 	background: #0E0E0E;
 
 	.main {
-		background: #fff;
+		background: #F7F7F7;
 		/*width: 1300px;*/
 		width: 100%;
 
@@ -149,7 +149,7 @@ body {
 						letter-spacing: .1em;
 						&:hover {
 							cursor: pointer;
-							background: #fff;
+							background: #F7F7F7;
 							color: #B28657;
 							border: 2px solid #B28657;
 
@@ -163,7 +163,7 @@ body {
 		}
 
 		.information {
-			background: #fff;
+			/*background: #fff*/;
 
 			.information-head {
 				padding: 40px 0;
@@ -179,7 +179,7 @@ body {
 			p {
 				padding-top: 10px;
 				font-size: .8em;
-				color: #C0C0C0;
+				color: #AEAEAE;
 			}
 
 			.information-content {
@@ -213,7 +213,7 @@ body {
 						letter-spacing: .1em;
 						&:hover {
 							cursor: pointer;
-							background: #fff;
+							background: #F7F7F7;
 							color: #B28657;
 							border: 2px solid #B28657;
 
@@ -255,7 +255,7 @@ body {
 				p {
 					padding-top: 10px;
 					font-size: .8em;
-					color: #C0C0C0;
+					color: #AEAEAE;
 				}
 			}
 
@@ -297,7 +297,7 @@ body {
 
 // OUR PROJECTS
 		.our-projects {
-			 background: #fff;
+			 /*background: #fff;*/
 			 margin-bottom: 55px;
 
 			.our-projects-head {
@@ -310,7 +310,7 @@ body {
 			p {
 				padding-top: 10px;
 				font-size: .8em;
-				color: #C0C0C0;
+				color: #AEAEAE;
 			}
 
 			.projects-buttons {
@@ -468,7 +468,7 @@ body {
 				letter-spacing: .1em;
 				&:hover {
 					cursor: pointer;
-					background: #fff;
+					background: #F7F7F7;
 					color: #B28657;
 					border: 2px solid #B28657;
 
@@ -501,7 +501,7 @@ body {
 				p {
 					padding-top: 10px;
 					font-size: .8em;
-					color: #C0C0C0;
+					color: #AEAEAE;
 				}
 			}
 
@@ -517,7 +517,7 @@ body {
 				height: 430px;
 				width: 330px;
 				margin: 0;
-				background: #fff;
+				background: #F7F7F7;
 				text-align: center;
 
 				h3 {
@@ -528,12 +528,77 @@ body {
 				}
 
 				p {
-				
+
 				}
 			}
 
 			.our-team-img {
-				margin: 50px auto;
+				margin: 50px auto 30px auto;
+			}
+
+			.our-team-icons {
+				display: flex;
+				margin: 25px 25px 0 25px;
+				a {
+					/*display: inline-block;*/
+					width: 35px;
+					height: 35px;
+					background: #BEBEBE;
+					text-align: center;
+					text-decoration: none;
+					line-height: 32px;
+					border-radius: 50%;
+					&:hover {
+						background: #B28657;
+					}
+				}
+			}
+		}
+
+// HAPPY CLIENTS
+		
+		.happy-clients {
+			height: 100vh;
+		}
+
+		.happy-clients-head {
+			padding: 40px 0;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+
+			p {
+				padding-top: 10px;
+				font-size: .8em;
+				color: #AEAEAE;
+			}
+		}
+
+		.happy-clients-content {
+			line-height: 2em;
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.happy-clients-person {
+			margin: 30px 0;
+
+			h3 {
+				font-size: 22px;
+			}
+
+			p {
+				font-size: 18px;
+			}
+		}
+
+		.happy-clients-text {
+			color: #AEAEAE;
+			margin: 0 20%;
+			
+			p {
+				font-size: 17px;
+				font-weight: 600;
 			}
 		}
 	}
