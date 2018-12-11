@@ -229,4 +229,36 @@ body .main .price-card-btn:hover { cursor: pointer; background: #B28657; color: 
 
 body .main .price-card-btn:focus { outline-style: none; }
 
-/*.row img {background: pink; width: 255px; height: 165px;}*/
+body .main .premium { background: #FFFFFF; border-top: 1px solid #CFCFCF; }
+
+body .main .premium-head { padding: 40px 0; text-align: center; text-transform: uppercase; }
+
+body .main .premium-head p { font-weight: bold; padding-top: 10px; font-size: .8em; color: #AEAEAE; }
+
+body .main .premium-container { /*display: inline-block;*/ display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; margin: 0 10%; border-bottom: 1px solid #CFCFCF; }
+
+body .main .premium-image { -ms-flex: 5; flex: 5; }
+
+body .main .premium-container-features { /*display: inline-block;*/ -ms-flex: 5; flex: 5; padding-top: 40px; line-height: 1.7em; }
+
+body .main .premium-container-features div:nth-of-type(2) { margin: 20px 0; }
+
+body .main .premium-container-features h3 { text-transform: uppercase; font-size: 1.2em; font-weight: 900; letter-spacing: 1px; }
+
+body .main .premium-container-features p { padding-left: 64px; font-size: 17px; color: #8F8F8F; }
+
+body .main .premium-container-features ul { list-style-type: none; padding-left: 64px; color: #8F8F8F; }
+
+body .main .premium-container-features li { padding-left: 20px; text-transform: uppercase; }
+
+body .main .premium-container-features li::before { content: ''; position: absolute; left: 54.8%; margin-top: 14px; width: 13px; height: 1px; background: #8F8F8F; }
+
+body .main .premium-container-features .premium-icon { float: left; padding-right: 30px; }
+
+body .main .premium-btn-container { text-align: center; }
+
+body .main .premium-btn { width: 160px; height: 40px; background: #B28657; border: none; border-radius: 17px; margin: 90px 0 60px 0; text-transform: uppercase; color: #FFFFFF; font-weight: 900; font-size: .7em; letter-spacing: .1em; }
+
+body .main .premium-btn:hover { cursor: pointer; background: #F7F7F7; color: #B28657; border: 2px solid #B28657; }
+
+body .main .premium-btn:focus { outline-style: none; }
