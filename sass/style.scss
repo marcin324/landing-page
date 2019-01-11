@@ -972,5 +972,62 @@ body {
 				}
 			}
 		}
+
+		/*! SHARE */
+
+		.share {
+			height: 75px;
+			background-color: #FEFEFE;
+		}
+
+		.share-content {
+			display: flex;
+			margin: 0 10%;
+		}
+
+		.share-text {
+			display: flex;
+		}
+
+		.share-social-media {
+			display: flex;
+			justify-content: space-around;
+			margin: 0 25px 0 25px;
+
+			a {
+				/*display: inline-block;*/
+				width: 35px;
+				height: 35px;
+				background: #BEBEBE;
+				text-align: center;
+				text-decoration: none;
+				line-height: 32px;
+				border-radius: 50%;
+
+				&:nth-child(1) {
+					background-color: #33C4F0;
+				}
+
+				&:nth-child(2) {
+					background-color: #137CB6;
+				}
+
+				&:nth-child(3) {
+					background-color: #336296;
+				}
+
+				&:nth-child(4) {
+					background-color: #E54338;
+				}
+
+				&:nth-child(5) {
+					background-color: #B81C2A;
+				}
+
+				&:hover {
+					background: #B28657;
+				}
+			}
+		}
 	}
 }
