@@ -111,7 +111,7 @@ body {
 							&::after {
 								content: '';
 								display: block;
-								margin-top: -5px;
+								margin-top: -3px;
 								border-bottom: solid #B28657;
 							}
 						}
@@ -982,50 +982,98 @@ body {
 
 		.share-content {
 			display: flex;
-			margin: 0 10%;
+			justify-content: space-between;
+			width: 45%;
+			height: 100%;
+			margin: 0 auto;
 		}
 
 		.share-text {
-			display: flex;
+			/*display: flex;
+			margin: 0;*/
+			line-height: 75px;
+			margin: 0;
+
+			img {
+				transform: translateY(25%);
+			}
+
+			p {
+				font-size: .8em;
+				color: #AEAEAE;
+				text-transform: uppercase;
+				font-weight: bold;
+				float: right;
+				margin-left: 10px;
+			}
 		}
 
 		.share-social-media {
 			display: flex;
+			flex-basis: 70%;
 			justify-content: space-around;
-			margin: 0 25px 0 25px;
+			align-items: center;
+			margin: 0;
+			/*justify-content: space-around;*/
+			/*margin: 0 25px 0 25px;*/
 
 			a {
 				/*display: inline-block;*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				width: 35px;
 				height: 35px;
-				background: #BEBEBE;
-				text-align: center;
+				/*background-color: #BEBEBE;*/
+				/*text-align: center;
+				line-height: 32px;*/
 				text-decoration: none;
-				line-height: 32px;
 				border-radius: 50%;
+				transition: .2s linear;
 
 				&:nth-child(1) {
 					background-color: #33C4F0;
+
+					&:hover {
+						background-color: #FFF;
+						box-shadow: 0 0 1px 1px #33C4F0;
+					}
 				}
 
 				&:nth-child(2) {
 					background-color: #137CB6;
+
+					&:hover {
+						background-color: #FFF;
+						box-shadow: 0 0 1px 1px #137CB6;
+					}
 				}
 
 				&:nth-child(3) {
 					background-color: #336296;
+
+					&:hover {
+						background-color: #FFF;
+						box-shadow: 0 0 1px 1px #336296;
+					}
 				}
 
 				&:nth-child(4) {
 					background-color: #E54338;
+
+					&:hover {
+						background-color: #FFF;
+						box-shadow: 0 0 1px 1px #E54338;
+					}
 				}
 
 				&:nth-child(5) {
 					background-color: #B81C2A;
-				}
 
-				&:hover {
-					background: #B28657;
+					&:hover {
+						background-color: #FFF;
+						box-shadow: 0 0 1px 1px #B81C2A;
+					}
 				}
 			}
 		}
