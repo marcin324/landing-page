@@ -89,12 +89,6 @@
       "css": "volume-control-phone",
       "code": 62112,
       "src": "fontawesome"
-    },
-    {
-      "uid": "0805cca616b3c12714f35af4d0912c10",
-      "css": "up-open-big",
-      "code": 59402,
-      "src": "entypo"
     }
   ]
 }
