@@ -1,0 +1,108 @@
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    background-color: #000000;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 10%;
+
+        &>div {
+            flex-basis: 31%;
+            margin: 0;
+        }
+
+        .footer-social-media {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+            div {
+                flex-basis: 100%;
+            }
+
+            p {
+                margin: 0;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+        }
+
+        .footer-text {
+            line-height: 1.4em;
+            font-weight: 500;
+            color: #7E7E7E;
+        }
+
+        .footer-subscribe {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            background-color: #373737;
+            border-radius: 5px;
+
+            &>form,
+            &>div {
+                flex-basis: 65%;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px 0;
+                border: none;
+                border-bottom: 2px solid #AEAEAE;
+                resize: none;
+                text-transform: uppercase;
+                background-color: #373737;
+                margin-bottom: 30px;
+
+                &:focus {
+                    outline-style: none;
+                }
+
+                &::placeholder {
+                    font-family: 'Lato', sans-serif;
+                    text-align: center;
+                    color: #AEAEAE;
+                }
+            }
+
+            .subscribe-btn-container {
+
+                text-align: center;
+
+                .subscribe-btn {
+                    width: 160px;
+                    height: 40px;
+                    background: #B28657;
+                    border: none;
+                    border-radius: 17px;
+                    /*margin: 0;*/
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    font-weight: 900;
+                    font-size: .7em;
+                    letter-spacing: .1em;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #F7F7F7;
+                        color: #B28657;
+                        border: 2px solid #B28657;
+
+                    }
+
+                    &:focus {
+                        outline-style: none;
+                    }
+                }
+            }
+        }
+    }
+}

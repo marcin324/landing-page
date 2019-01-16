@@ -1,0 +1,194 @@
+/* PROJECTS */
+
+.projects {
+    background: #F7F7F7;
+    padding-bottom: 55px;
+
+    .projects-head {
+        padding: 40px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    p {
+        padding-top: 10px;
+        font-size: .8em;
+        color: #AEAEAE;
+    }
+
+    .projects-buttons {
+        text-align: center;
+        width: 720px;
+        /*background-color: #ededed;*/
+        display: flex;
+        /*border-radius: 25px;
+				border: 1px solid #D9D9D9;*/
+        /*:last-child {
+					padding-right: 25px;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+				}
+				:first-child {
+					padding-left: 25px;
+					border-top-left-radius: 25px;
+					border-bottom-left-radius: 25px;
+				}*/
+    }
+
+    .projects-btn {
+        min-height: 58px;
+        /*display: inline-block;*/
+        background-color: #ededed;
+        /*border: none;*/
+        /*border-right: 1px solid #D9D9D9;*/
+        border: 1px solid #D9D9D9;
+        /*margin: 0*/
+        padding: 0 1%;
+        font-size: .9em;
+        text-transform: uppercase;
+        color: #787878;
+        letter-spacing: .1em;
+        position: relative;
+        flex: 1;
+
+        /*font-size: .65em;*/
+        &:hover {
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 5%;
+                width: 90%;
+                height: 5px;
+                background: #B28657;
+                /*display: block;
+						margin-top: -5px;
+						border-bottom: 5px solid #B28657;*/
+            }
+        }
+
+        &:focus {
+            outline-style: none;
+        }
+
+        &:first-child {
+            padding: 0 0 0 30px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+
+            &:hover {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 25px;
+                    width: 70%;
+                    height: 5px;
+                    background: #B28657;
+                }
+            }
+        }
+
+        &:last-child {
+            /*border-right: none;*/
+            padding: 0 30px 0 0;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+
+            &:hover {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    /*right: 12%;*/
+                    width: 70%;
+                    height: 5px;
+                    background: #B28657;
+                }
+            }
+        }
+    }
+
+    /*a {
+				display: block;
+				line-height: 58px;
+				text-decoration: none;
+				/*width: 160px;
+				height: 40px;*/
+    /*border: none;*/
+    /*padding: 0;*/
+    /*border-radius: 17px;*/
+    /*text-transform: uppercase;
+				color: #000;
+				font-size: .65em;
+				letter-spacing: .1em;
+				
+			}*/
+
+    .gallery {
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 10%;
+    }
+
+    .gallery-layer {
+        width: 255px;
+        height: 165px;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        position: absolute;
+        left: 7px;
+        transition: .3s;
+        text-align: center;
+        color: #fff;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        h2 {
+            font-size: 1.1em;
+            letter-spacing: .1em;
+            padding-top: 40px;
+            text-transform: uppercase;
+        }
+
+        p {
+            padding: 15px 45px 0 45px;
+            line-height: 20px;
+        }
+    }
+
+    .button-container {
+        text-align: center;
+
+        .btn-button-container {
+            width: 160px;
+            height: 40px;
+            background: #B28657;
+            border: none;
+            border-radius: 17px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-weight: 900;
+            font-size: .7em;
+            letter-spacing: .1em;
+
+            &:hover {
+                cursor: pointer;
+                background: #F7F7F7;
+                color: #B28657;
+                border: 2px solid #B28657;
+
+            }
+
+            &:focus {
+                outline-style: none;
+            }
+        }
+    }
+}

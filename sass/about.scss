@@ -1,0 +1,75 @@
+/* ABOUT */
+
+.about {
+    background: #F7F7F7;
+
+    .about-head {
+        padding: 40px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    p {
+        padding-top: 10px;
+        font-size: .8em;
+        color: #AEAEAE;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 8%;
+
+        .about-text {
+            flex: 55%;
+            text-align: left;
+            padding-left: 10%;
+            line-height: 1.6;
+
+            p {
+                padding: 0;
+                color: #555;
+                font-size: .9em;
+            }
+
+            .about-btn {
+                width: 160px;
+                height: 40px;
+                background: #B28657;
+                border: none;
+                border-radius: 17px;
+                margin-top: 20px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                font-weight: 900;
+                font-size: .7em;
+                letter-spacing: .1em;
+
+                &:hover {
+                    cursor: pointer;
+                    background: #F7F7F7;
+                    color: #B28657;
+                    border: 2px solid #B28657;
+
+                }
+
+                &:focus {
+                    outline-style: none;
+                }
+            }
+        }
+
+        .about-video {
+            flex: 45%;
+            text-align: center;
+            padding-right: 10%;
+            padding-left: 3%;
+        }
+
+        .video {
+            height: 275px;
+            width: 445px;
+        }
+    }
+}

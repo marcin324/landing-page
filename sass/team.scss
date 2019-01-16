@@ -1,0 +1,73 @@
+/* TEAM */
+
+.team-background {
+    min-height: 100vh;
+    background: url('../images/our_team_background-awax.png');
+    /*object-fit: cover;*/
+    /*background-size: cover;
+	background-position: center;*/
+
+    .team-head {
+        padding: 40px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            padding-top: 10px;
+            font-size: .8em;
+            color: #AEAEAE;
+        }
+    }
+
+    .team-container {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-between;
+
+        .team-card {
+            height: 430px;
+            width: 330px;
+            margin: 0;
+            background: #FFFFFF;
+            text-align: center;
+
+            .team-img {
+                margin: 50px auto 30px auto;
+            }
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 1.3em;
+                letter-spacing: .1em;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .team-icons {
+        display: flex;
+        margin: 25px 25px 0 25px;
+
+        a {
+            /*display: inline-block;*/
+            width: 35px;
+            height: 35px;
+            background: #BEBEBE;
+            text-align: center;
+            text-decoration: none;
+            line-height: 32px;
+            border-radius: 50%;
+
+            &:hover {
+                background: #B28657;
+            }
+        }
+    }
+}
