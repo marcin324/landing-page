@@ -1,0 +1,107 @@
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  background-color: #000000;
+}
+
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 10%;
+}
+
+.footer .footer-container > div {
+  flex-basis: 31%;
+  margin: 0;
+}
+
+.footer .footer-container .footer-social-media {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.footer .footer-container .footer-social-media div {
+  flex-basis: 100%;
+}
+
+.footer .footer-container .footer-social-media p {
+  margin: 0;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.footer .footer-container .footer-text {
+  line-height: 1.4em;
+  font-weight: 500;
+  color: #7E7E7E;
+}
+
+.footer .footer-container .footer-subscribe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: #373737;
+  border-radius: 5px;
+}
+
+.footer .footer-container .footer-subscribe > form,
+.footer .footer-container .footer-subscribe > div {
+  flex-basis: 65%;
+}
+
+.footer .footer-container .footer-subscribe input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #AEAEAE;
+  resize: none;
+  text-transform: uppercase;
+  background-color: #373737;
+  margin-bottom: 30px;
+}
+
+.footer .footer-container .footer-subscribe input:focus {
+  outline-style: none;
+}
+
+.footer .footer-container .footer-subscribe input::placeholder {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #AEAEAE;
+}
+
+.footer .footer-container .footer-subscribe .subscribe-btn-container {
+  text-align: center;
+}
+
+.footer .footer-container .footer-subscribe .subscribe-btn-container .subscribe-btn {
+  width: 160px;
+  height: 40px;
+  background: #B28657;
+  border: none;
+  border-radius: 17px;
+  /*margin: 0;*/
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: .7em;
+  letter-spacing: .1em;
+}
+
+.footer .footer-container .footer-subscribe .subscribe-btn-container .subscribe-btn:hover {
+  cursor: pointer;
+  background: #F7F7F7;
+  color: #B28657;
+  border: 2px solid #B28657;
+}
+
+.footer .footer-container .footer-subscribe .subscribe-btn-container .subscribe-btn:focus {
+  outline-style: none;
+}
+
+/*# sourceMappingURL=footer.css.map */
