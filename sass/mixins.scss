@@ -1,0 +1,66 @@
+/* VARIABLES */
+
+$transition: all .2s ease-in-out;
+
+$gold: #B28657;
+$goldHover: #D1AB82;
+$white: #FFFFFF;
+$black: #000000;
+$grey: #AEAEAE;
+$darkGrey: #373737;
+$backgroundColor: #F7F7F7;
+$iconColor: #BEBEBE;
+$borderColor: #CFCFCF;
+
+$twitterColor: #33C4F0;
+$linkedinColor: #137CB6;
+$facebookColor: #336296;
+$googleColor: #E54338;
+$pinterestColor: #B81C2A;
+
+@keyframes icon-up {
+    0% {
+        font-size: 1em;
+    }
+
+    40% {
+        font-size: 1em;
+    }
+
+    50% {
+        font-size: 2em;
+    }
+
+    60% {
+        font-size: 1em;
+    }
+
+    100% {
+        font-size: 1em;
+    }
+}
+
+@mixin goldButton ($marginTop, $marginBottom) {
+    width: 160px;
+    height: 40px;
+    background-color: $gold;
+    border: none;
+    border-radius: 17px;
+    margin-top: $marginTop;
+    margin-bottom: $marginBottom;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 900;
+    font-size: .7em;
+    letter-spacing: .1em;
+    transition: $transition;
+
+    &:hover {
+        cursor: pointer;
+        background: $goldHover;
+    }
+
+    &:focus {
+        outline-style: none;
+    }
+}

@@ -1,7 +1,9 @@
+@import 'mixins.scss';
+
 /* SERVICES */
 
 .services {
-    background: #000000;
+    background: $black;
     padding-bottom: 55px;
 
     .services-head {
@@ -11,18 +13,18 @@
         font-weight: bold;
 
         h2 {
-            color: #FFFFFF;
+            color: $white;
         }
 
         p {
             padding-top: 10px;
             font-size: .8em;
-            color: #AEAEAE;
+            color: $grey;
         }
     }
 
     .services-content {
-        color: #fff;
+        color: $white;
         display: flex;
         flex-direction: row;
         padding: 0 10%;
@@ -31,10 +33,10 @@
         .services-content-box {
             flex: 1;
             padding: 2% 0;
-            border-right: 2px solid #363636;
+            border-right: 1px solid $grey;
 
             &:first-child {
-                border-left: 2px solid #363636;
+                border-left: 1px solid $grey;
             }
 
             .services-icon {
@@ -58,7 +60,7 @@
                 }
 
                 p {
-                    color: #696969;
+                    color: $grey;
                     font-size: .7em;
                 }
             }

@@ -1,0 +1,6 @@
+/* VARIABLES */
+@keyframes icon-up { 0% { font-size: 1em; }
+  40% { font-size: 1em; }
+  50% { font-size: 2em; }
+  60% { font-size: 1em; }
+  100% { font-size: 1em; } }

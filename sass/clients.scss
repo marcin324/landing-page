@@ -1,8 +1,10 @@
+@import 'mixins.scss';
+
 /* CLIENTS */
 
 .clients {
     min-height: 100vh;
-    background: #F7F7F7;
+    background: $backgroundColor;
 
     .clients-head {
         padding: 40px 0;
@@ -13,7 +15,7 @@
         p {
             padding-top: 10px;
             font-size: .8em;
-            color: #AEAEAE;
+            color: $grey;
         }
     }
 
@@ -35,7 +37,7 @@
         }
 
         .clients-text {
-            color: #AEAEAE;
+            color: $grey;
             margin: 0 20%;
 
             p {

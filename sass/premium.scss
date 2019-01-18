@@ -1,8 +1,10 @@
+@import 'mixins.scss';
+
 /* PREMIUM */
 
 .premium {
-    background: #FFFFFF;
-    border-top: 1px solid #CFCFCF;
+    background: $white;
+    border-top: 1px solid $borderColor;
 
     .premium-head {
         padding: 40px 0;
@@ -13,7 +15,7 @@
             font-weight: bold;
             padding-top: 10px;
             font-size: .8em;
-            color: #AEAEAE;
+            color: $grey;
         }
     }
 
@@ -22,7 +24,7 @@
         display: flex;
         flex-direction: row;
         margin: 0 10%;
-        border-bottom: 1px solid #CFCFCF;
+        border-bottom: 1px solid $grey;
 
         .premium-image {
             flex: 5;
@@ -48,13 +50,13 @@
             p {
                 padding-left: 64px;
                 font-size: 17px;
-                color: #8F8F8F;
+                color: $grey;
             }
 
             ul {
                 list-style-type: none;
                 padding-left: 64px;
-                color: #8F8F8F;
+                color: $grey;
             }
 
             li {
@@ -68,7 +70,7 @@
                     margin-top: 14px;
                     width: 13px;
                     height: 1px;
-                    background: #8F8F8F;
+                    background: $grey;
                 }
             }
 
@@ -83,30 +85,7 @@
         text-align: center;
 
         .premium-btn {
-            width: 160px;
-            height: 40px;
-            background: #B28657;
-            border: none;
-            border-radius: 17px;
-            margin: 50px 0 75px 0;
-            /*90px 0 60px 0;*/
-            text-transform: uppercase;
-            color: #FFFFFF;
-            font-weight: 900;
-            font-size: .7em;
-            letter-spacing: .1em;
-
-            &:hover {
-                cursor: pointer;
-                background: #F7F7F7;
-                color: #B28657;
-                border: 2px solid #B28657;
-
-            }
-
-            &:focus {
-                outline-style: none;
-            }
+            @include goldButton(50px, 75px);
         }
     }
 }

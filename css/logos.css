@@ -1,13 +1,9 @@
-/* LOGOS */
-.logos-images {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 25vh;
-  padding: 0 11%;
-  border-top: 1px solid #CFCFCF;
-  border-bottom: 2px solid #CFCFCF;
-  background: #FFF;
-}
+/* VARIABLES */
+@keyframes icon-up { 0% { font-size: 1em; }
+  40% { font-size: 1em; }
+  50% { font-size: 2em; }
+  60% { font-size: 1em; }
+  100% { font-size: 1em; } }
 
-/*# sourceMappingURL=logos.css.map */
+/* LOGOS */
+.logos-images { display: flex; justify-content: space-around; align-items: center; min-height: 25vh; padding: 0 11%; border-top: 1px solid #CFCFCF; border-bottom: 1px solid #CFCFCF; background-color: #FFFFFF; }

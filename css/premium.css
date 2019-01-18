@@ -1,112 +1,41 @@
+/* VARIABLES */
+@keyframes icon-up { 0% { font-size: 1em; }
+  40% { font-size: 1em; }
+  50% { font-size: 2em; }
+  60% { font-size: 1em; }
+  100% { font-size: 1em; } }
+
 /* PREMIUM */
-.premium {
-  background: #FFFFFF;
-  border-top: 1px solid #CFCFCF;
-}
+.premium { background: #FFFFFF; border-top: 1px solid #CFCFCF; }
 
-.premium .premium-head {
-  padding: 40px 0;
-  text-align: center;
-  text-transform: uppercase;
-}
+.premium .premium-head { padding: 40px 0; text-align: center; text-transform: uppercase; }
 
-.premium .premium-head p {
-  font-weight: bold;
-  padding-top: 10px;
-  font-size: .8em;
-  color: #AEAEAE;
-}
+.premium .premium-head p { font-weight: bold; padding-top: 10px; font-size: .8em; color: #AEAEAE; }
 
-.premium .premium-container {
-  /*display: inline-block;*/
-  display: flex;
-  flex-direction: row;
-  margin: 0 10%;
-  border-bottom: 1px solid #CFCFCF;
-}
+.premium .premium-container { /*display: inline-block;*/ display: flex; flex-direction: row; margin: 0 10%; border-bottom: 1px solid #AEAEAE; }
 
-.premium .premium-container .premium-image {
-  flex: 5;
-}
+.premium .premium-container .premium-image { flex: 5; }
 
-.premium .premium-container .premium-container-features {
-  /*display: inline-block;*/
-  flex: 5;
-  padding-top: 40px;
-  line-height: 1.7em;
-}
+.premium .premium-container .premium-container-features { /*display: inline-block;*/ flex: 5; padding-top: 40px; line-height: 1.7em; }
 
-.premium .premium-container .premium-container-features div:nth-of-type(2) {
-  margin: 20px 0;
-}
+.premium .premium-container .premium-container-features div:nth-of-type(2) { margin: 20px 0; }
 
-.premium .premium-container .premium-container-features h3 {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
+.premium .premium-container .premium-container-features h3 { text-transform: uppercase; font-size: 1.2em; font-weight: 900; letter-spacing: 1px; }
 
-.premium .premium-container .premium-container-features p {
-  padding-left: 64px;
-  font-size: 17px;
-  color: #8F8F8F;
-}
+.premium .premium-container .premium-container-features p { padding-left: 64px; font-size: 17px; color: #AEAEAE; }
 
-.premium .premium-container .premium-container-features ul {
-  list-style-type: none;
-  padding-left: 64px;
-  color: #8F8F8F;
-}
+.premium .premium-container .premium-container-features ul { list-style-type: none; padding-left: 64px; color: #AEAEAE; }
 
-.premium .premium-container .premium-container-features li {
-  padding-left: 20px;
-  text-transform: uppercase;
-}
+.premium .premium-container .premium-container-features li { padding-left: 20px; text-transform: uppercase; }
 
-.premium .premium-container .premium-container-features li::before {
-  content: '';
-  position: absolute;
-  left: 54.8%;
-  margin-top: 14px;
-  width: 13px;
-  height: 1px;
-  background: #8F8F8F;
-}
+.premium .premium-container .premium-container-features li::before { content: ''; position: absolute; left: 54.8%; margin-top: 14px; width: 13px; height: 1px; background: #AEAEAE; }
 
-.premium .premium-container .premium-container-features .premium-icon {
-  float: left;
-  padding-right: 30px;
-}
+.premium .premium-container .premium-container-features .premium-icon { float: left; padding-right: 30px; }
 
-.premium .premium-btn-container {
-  text-align: center;
-}
+.premium .premium-btn-container { text-align: center; }
 
-.premium .premium-btn-container .premium-btn {
-  width: 160px;
-  height: 40px;
-  background: #B28657;
-  border: none;
-  border-radius: 17px;
-  margin: 50px 0 75px 0;
-  /*90px 0 60px 0;*/
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-weight: 900;
-  font-size: .7em;
-  letter-spacing: .1em;
-}
+.premium .premium-btn-container .premium-btn { width: 160px; height: 40px; background-color: #B28657; border: none; border-radius: 17px; margin-top: 50px; margin-bottom: 75px; text-transform: uppercase; color: #FFFFFF; font-weight: 900; font-size: .7em; letter-spacing: .1em; transition: all 0.2s ease-in-out; }
 
-.premium .premium-btn-container .premium-btn:hover {
-  cursor: pointer;
-  background: #F7F7F7;
-  color: #B28657;
-  border: 2px solid #B28657;
-}
+.premium .premium-btn-container .premium-btn:hover { cursor: pointer; background: #D1AB82; }
 
-.premium .premium-btn-container .premium-btn:focus {
-  outline-style: none;
-}
-
-/*# sourceMappingURL=premium.css.map */
+.premium .premium-btn-container .premium-btn:focus { outline-style: none; }

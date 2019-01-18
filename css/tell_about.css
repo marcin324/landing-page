@@ -1,106 +1,41 @@
+/* VARIABLES */
+@keyframes icon-up { 0% { font-size: 1em; }
+  40% { font-size: 1em; }
+  50% { font-size: 2em; }
+  60% { font-size: 1em; }
+  100% { font-size: 1em; } }
+
 /* TELL_ABOUT */
-.tell_about {
-  height: 75px;
-  background-color: #FEFEFE;
-  border-bottom: 1px solid #CFCFCF;
-}
+.tell_about { height: 75px; background-color: #FFFFFF; border-bottom: 1px solid #CFCFCF; }
 
-.tell_about .tell_about-content {
-  display: flex;
-  justify-content: space-between;
-  width: 45%;
-  height: 100%;
-  margin: 0 auto;
-}
+.tell_about .tell_about-content { display: flex; justify-content: space-between; width: 45%; height: 100%; margin: 0 auto; }
 
-.tell_about .tell_about-content .tell_about-text {
-  /*display: flex;
-            margin: 0;*/
-  line-height: 75px;
-  margin: 0;
-}
+.tell_about .tell_about-content .tell_about-text { line-height: 75px; margin: 0; }
 
-.tell_about .tell_about-content .tell_about-text img {
-  transform: translateY(25%);
-}
+.tell_about .tell_about-content .tell_about-text img { transform: translateY(25%); }
 
-.tell_about .tell_about-content .tell_about-text p {
-  font-size: .8em;
-  color: #AEAEAE;
-  text-transform: uppercase;
-  font-weight: bold;
-  float: right;
-  margin-left: 10px;
-}
+.tell_about .tell_about-content .tell_about-text p { font-size: .8em; color: #AEAEAE; text-transform: uppercase; font-weight: bold; float: right; margin-left: 10px; }
 
-.tell_about .tell_about-social-media {
-  display: flex;
-  flex-basis: 70%;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  /*justify-content: space-around;*/
-  /*margin: 0 25px 0 25px;*/
-}
+.tell_about .tell_about-social-media { display: flex; flex-basis: 70%; justify-content: space-around; align-items: center; margin: 0; }
 
-.tell_about .tell_about-social-media a {
-  /*display: inline-block;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35px;
-  height: 35px;
-  /*background-color: #BEBEBE;*/
-  /*text-align: center;
-                    line-height: 32px;*/
-  text-decoration: none;
-  border-radius: 50%;
-  transition: .1s;
-}
+.tell_about .tell_about-social-media a { display: flex; justify-content: center; align-items: center; width: 35px; height: 35px; text-decoration: none; border-radius: 50%; transition: all 0.2s ease-in-out; }
 
-.tell_about .tell_about-social-media a:nth-child(1) {
-  background-color: #33C4F0;
-}
+.tell_about .tell_about-social-media a:nth-child(1) { background-color: #33C4F0; }
 
-.tell_about .tell_about-social-media a:nth-child(1):hover {
-  background-color: #FFF;
-  box-shadow: 0 0 1px 1px #33C4F0;
-}
+.tell_about .tell_about-social-media a:nth-child(1):hover { background-color: #FFFFFF; box-shadow: 0 0 1px 1px #33C4F0; }
 
-.tell_about .tell_about-social-media a:nth-child(2) {
-  background-color: #137CB6;
-}
+.tell_about .tell_about-social-media a:nth-child(2) { background-color: #137CB6; }
 
-.tell_about .tell_about-social-media a:nth-child(2):hover {
-  background-color: #FFF;
-  box-shadow: 0 0 1px 1px #137CB6;
-}
+.tell_about .tell_about-social-media a:nth-child(2):hover { background-color: #FFFFFF; box-shadow: 0 0 1px 1px #137CB6; }
 
-.tell_about .tell_about-social-media a:nth-child(3) {
-  background-color: #336296;
-}
+.tell_about .tell_about-social-media a:nth-child(3) { background-color: #336296; }
 
-.tell_about .tell_about-social-media a:nth-child(3):hover {
-  background-color: #FFF;
-  box-shadow: 0 0 1px 1px #336296;
-}
+.tell_about .tell_about-social-media a:nth-child(3):hover { background-color: #FFFFFF; box-shadow: 0 0 1px 1px #336296; }
 
-.tell_about .tell_about-social-media a:nth-child(4) {
-  background-color: #E54338;
-}
+.tell_about .tell_about-social-media a:nth-child(4) { background-color: #E54338; }
 
-.tell_about .tell_about-social-media a:nth-child(4):hover {
-  background-color: #FFF;
-  box-shadow: 0 0 1px 1px #E54338;
-}
+.tell_about .tell_about-social-media a:nth-child(4):hover { background-color: #FFFFFF; box-shadow: 0 0 1px 1px #E54338; }
 
-.tell_about .tell_about-social-media a:nth-child(5) {
-  background-color: #B81C2A;
-}
+.tell_about .tell_about-social-media a:nth-child(5) { background-color: #B81C2A; }
 
-.tell_about .tell_about-social-media a:nth-child(5):hover {
-  background-color: #FFF;
-  box-shadow: 0 0 1px 1px #B81C2A;
-}
-
-/*# sourceMappingURL=tell_about.css.map */
+.tell_about .tell_about-social-media a:nth-child(5):hover { background-color: #FFFFFF; box-shadow: 0 0 1px 1px #B81C2A; }

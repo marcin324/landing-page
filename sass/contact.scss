@@ -1,8 +1,9 @@
+@import 'mixins.scss';
+
 /* CONTACT */
 
 .contact {
-    /*height: 600px;*/
-    background-color: #F7F7F7;
+    background-color: $backgroundColor;
 
     .contact-head {
         padding: 40px 0;
@@ -13,7 +14,7 @@
             font-weight: bold;
             padding-top: 10px;
             font-size: .8em;
-            color: #AEAEAE;
+            color: $grey;
         }
     }
 
@@ -46,10 +47,10 @@
                     width: 100%;
                     padding: 10px 0;
                     border: none;
-                    border-bottom: 2px solid #AEAEAE;
+                    border-bottom: 2px solid $grey;
                     resize: none;
                     text-transform: uppercase;
-                    background-color: #F7F7F7;
+                    background-color: $backgroundColor;
 
                     &:focus {
                         outline-style: none;
@@ -57,7 +58,7 @@
 
                     &::placeholder {
                         font-family: 'Lato', sans-serif;
-                        color: #AEAEAE;
+                        color: $grey;
                     }
                 }
 
@@ -73,53 +74,7 @@
         text-align: center;
 
         .contact-btn {
-            width: 160px;
-            height: 40px;
-            background: #B28657;
-            border: none;
-            border-radius: 17px;
-            margin: 50px 0 75px 0;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            font-weight: 900;
-            font-size: .7em;
-            letter-spacing: .1em;
-
-            &:hover {
-                cursor: pointer;
-                background: #F7F7F7;
-                color: #B28657;
-                border: 2px solid #B28657;
-            }
-
-            &:focus {
-                outline-style: none;
-            }
+            @include goldButton(50px, 75px);
         }
     }
 }
-
-/*input,
-		textarea {
-			width: 100%;
-			padding: 10px 0;
-			border: none;
-			border-bottom: 2px solid #AEAEAE;
-			resize: none;
-			text-transform: uppercase;
-			background-color: #F7F7F7;
-
-			&:focus {
-				outline-style: none;
-			}
-
-			&::placeholder {
-				font-family: 'Lato', sans-serif;
-				color: #AEAEAE;
-			}
-		}
-
-		textarea {
-			margin-top: 40px;
-			height: 40px;
-		}*/

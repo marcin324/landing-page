@@ -1,9 +1,11 @@
+@import 'mixins.scss';
+
 /* TELL_ABOUT */
 
 .tell_about {
     height: 75px;
-    background-color: #FEFEFE;
-    border-bottom: 1px solid #CFCFCF;
+    background-color: $white;
+    border-bottom: 1px solid $borderColor;
 
     .tell_about-content {
         display: flex;
@@ -13,8 +15,6 @@
         margin: 0 auto;
 
         .tell_about-text {
-            /*display: flex;
-            margin: 0;*/
             line-height: 75px;
             margin: 0;
 
@@ -24,7 +24,7 @@
 
             p {
                 font-size: .8em;
-                color: #AEAEAE;
+                color: $grey;
                 text-transform: uppercase;
                 font-weight: bold;
                 float: right;
@@ -39,65 +39,59 @@
         justify-content: space-around;
         align-items: center;
         margin: 0;
-        /*justify-content: space-around;*/
-        /*margin: 0 25px 0 25px;*/
 
         a {
-            /*display: inline-block;*/
             display: flex;
             justify-content: center;
             align-items: center;
             width: 35px;
             height: 35px;
-            /*background-color: #BEBEBE;*/
-            /*text-align: center;
-                    line-height: 32px;*/
             text-decoration: none;
             border-radius: 50%;
-            transition: .1s;
+            transition: $transition;
 
             &:nth-child(1) {
-                background-color: #33C4F0;
+                background-color: $twitterColor;
 
                 &:hover {
-                    background-color: #FFF;
-                    box-shadow: 0 0 1px 1px #33C4F0;
+                    background-color: $white;
+                    box-shadow: 0 0 1px 1px $twitterColor;
                 }
             }
 
             &:nth-child(2) {
-                background-color: #137CB6;
+                background-color: $linkedinColor;
 
                 &:hover {
-                    background-color: #FFF;
-                    box-shadow: 0 0 1px 1px #137CB6;
+                    background-color: $white;
+                    box-shadow: 0 0 1px 1px $linkedinColor;
                 }
             }
 
             &:nth-child(3) {
-                background-color: #336296;
+                background-color: $facebookColor;
 
                 &:hover {
-                    background-color: #FFF;
-                    box-shadow: 0 0 1px 1px #336296;
+                    background-color: $white;
+                    box-shadow: 0 0 1px 1px $facebookColor;
                 }
             }
 
             &:nth-child(4) {
-                background-color: #E54338;
+                background-color: $googleColor;
 
                 &:hover {
-                    background-color: #FFF;
-                    box-shadow: 0 0 1px 1px #E54338;
+                    background-color: $white;
+                    box-shadow: 0 0 1px 1px $googleColor;
                 }
             }
 
             &:nth-child(5) {
-                background-color: #B81C2A;
+                background-color: $pinterestColor;
 
                 &:hover {
-                    background-color: #FFF;
-                    box-shadow: 0 0 1px 1px #B81C2A;
+                    background-color: $white;
+                    box-shadow: 0 0 1px 1px $pinterestColor;
                 }
             }
         }

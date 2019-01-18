@@ -1,11 +1,14 @@
+@import 'mixins.scss';
+
 /* FOOTER */
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*position: relative;*/
     height: 260px;
-    background-color: #000000;
+    background-color: $black;
 
     .footer-container {
         display: flex;
@@ -29,14 +32,14 @@
             p {
                 margin: 0;
                 font-weight: bold;
-                color: #FFFFFF;
+                color: $white;
             }
         }
 
         .footer-text {
             line-height: 1.4em;
             font-weight: 500;
-            color: #7E7E7E;
+            color: $grey;
         }
 
         .footer-subscribe {
@@ -44,7 +47,7 @@
             justify-content: center;
             flex-wrap: wrap;
             align-content: center;
-            background-color: #373737;
+            background-color: $darkGrey;
             border-radius: 5px;
 
             &>form,
@@ -56,10 +59,10 @@
                 width: 100%;
                 padding: 10px 0;
                 border: none;
-                border-bottom: 2px solid #AEAEAE;
+                border-bottom: 2px solid $grey;
                 resize: none;
                 text-transform: uppercase;
-                background-color: #373737;
+                background-color: $darkGrey;
                 margin-bottom: 30px;
 
                 &:focus {
@@ -69,7 +72,7 @@
                 &::placeholder {
                     font-family: 'Lato', sans-serif;
                     text-align: center;
-                    color: #AEAEAE;
+                    color: $grey;
                 }
             }
 
@@ -78,31 +81,37 @@
                 text-align: center;
 
                 .subscribe-btn {
-                    width: 160px;
-                    height: 40px;
-                    background: #B28657;
-                    border: none;
-                    border-radius: 17px;
-                    /*margin: 0;*/
-                    text-transform: uppercase;
-                    color: #FFFFFF;
-                    font-weight: 900;
-                    font-size: .7em;
-                    letter-spacing: .1em;
-
-                    &:hover {
-                        cursor: pointer;
-                        background: #F7F7F7;
-                        color: #B28657;
-                        border: 2px solid #B28657;
-
-                    }
-
-                    &:focus {
-                        outline-style: none;
-                    }
+                    @include goldButton(0, 0);
                 }
             }
         }
+    }
+
+    .btn-up i:before {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        color: $white;
+        background-color: $gold;
+        font-size: 1em;
+        font-weight: 900;
+        text-align: center;
+        text-decoration: none;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: $transition;
+        animation: icon-up 4s linear infinite;
+        display: none;
+    }
+
+    .btn-up i.active:before {
+        display: block;
+    }
+
+    .btn-up:hover i:before {
+        background-color: $goldHover;
     }
 }

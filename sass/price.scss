@@ -1,8 +1,10 @@
+@import 'mixins.scss';
+
 /* PRICE */
 
 .price {
     min-height: 90vh;
-    background: #EDEDED;
+    background: $backgroundColor;
 
     .price-head {
         padding: 40px 0;
@@ -13,7 +15,7 @@
         p {
             padding-top: 10px;
             font-size: .8em;
-            color: #AEAEAE;
+            color: $grey;
         }
     }
 
@@ -28,12 +30,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            /*align-items: space-between;*/
             width: 245px;
             height: 345px;
             padding: 35px 0;
             margin: 0;
-            background: #FFFFFF;
+            background-color: $white;
             text-align: center;
 
             p {
@@ -45,12 +46,12 @@
             span {
                 text-transform: uppercase;
                 font-size: .7em;
-                color: #AEAEAE;
+                color: $grey;
             }
 
             .price-card-list {
                 list-style-type: none;
-                color: #7E7E7E;
+                color: $grey;
                 position: relative;
 
                 li {
@@ -63,10 +64,7 @@
                         left: 47.5%;
                         width: 5%;
                         height: 1px;
-                        background: #7E7E7E;
-                        /*display: block;
-                                margin-top: -5px;
-                                border-bottom: 5px solid #B28657;*/
+                        background: $grey;
                     }
 
                     &:first-child {
@@ -81,23 +79,20 @@
             .price-card-btn {
                 width: 130px;
                 height: 40px;
-                /*justify-content: center;
-                align-items: center;*/
-                background: #AEAEAE;
+                background: $grey;
                 border: none;
                 border-radius: 17px;
                 /*margin-top: 20px;*/
                 text-transform: uppercase;
-                color: #FFFFFF;
+                color: $white;
                 font-weight: 900;
                 font-size: .7em;
                 letter-spacing: .1em;
+                transition: $transition;
 
                 &:hover {
                     cursor: pointer;
-                    background: #B28657;
-                    color: #FFFFFF;
-                    border: 2px solid #B28657;
+                    background: $goldHover;
                 }
 
                 &:focus {

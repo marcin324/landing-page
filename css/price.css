@@ -1,108 +1,35 @@
+/* VARIABLES */
+@keyframes icon-up { 0% { font-size: 1em; }
+  40% { font-size: 1em; }
+  50% { font-size: 2em; }
+  60% { font-size: 1em; }
+  100% { font-size: 1em; } }
+
 /* PRICE */
-.price {
-  min-height: 90vh;
-  background: #EDEDED;
-}
+.price { min-height: 90vh; background: #F7F7F7; }
 
-.price .price-head {
-  padding: 40px 0;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+.price .price-head { padding: 40px 0; text-align: center; text-transform: uppercase; font-weight: bold; }
 
-.price .price-head p {
-  padding-top: 10px;
-  font-size: .8em;
-  color: #AEAEAE;
-}
+.price .price-head p { padding-top: 10px; font-size: .8em; color: #AEAEAE; }
 
-.price .price-container {
-  width: 100%;
-  margin-top: 20px;
-  padding: 0 10%;
-  display: flex;
-  justify-content: space-between;
-}
+.price .price-container { width: 100%; margin-top: 20px; padding: 0 10%; display: flex; justify-content: space-between; }
 
-.price .price-container .price-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /*align-items: space-between;*/
-  width: 245px;
-  height: 345px;
-  padding: 35px 0;
-  margin: 0;
-  background: #FFFFFF;
-  text-align: center;
-}
+.price .price-container .price-card { display: flex; flex-direction: column; justify-content: space-between; width: 245px; height: 345px; padding: 35px 0; margin: 0; background-color: #FFFFFF; text-align: center; }
 
-.price .price-container .price-card p {
-  font-size: 1em;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
+.price .price-container .price-card p { font-size: 1em; text-transform: uppercase; padding-bottom: 10px; }
 
-.price .price-container .price-card span {
-  text-transform: uppercase;
-  font-size: .7em;
-  color: #AEAEAE;
-}
+.price .price-container .price-card span { text-transform: uppercase; font-size: .7em; color: #AEAEAE; }
 
-.price .price-container .price-card .price-card-list {
-  list-style-type: none;
-  color: #7E7E7E;
-  position: relative;
-}
+.price .price-container .price-card .price-card-list { list-style-type: none; color: #AEAEAE; position: relative; }
 
-.price .price-container .price-card .price-card-list li {
-  font-size: .8em;
-  line-height: 2.1em;
-}
+.price .price-container .price-card .price-card-list li { font-size: .8em; line-height: 2.1em; }
 
-.price .price-container .price-card .price-card-list li::before {
-  content: '';
-  position: absolute;
-  left: 47.5%;
-  width: 5%;
-  height: 1px;
-  background: #7E7E7E;
-  /*display: block;
-                                margin-top: -5px;
-                                border-bottom: 5px solid #B28657;*/
-}
+.price .price-container .price-card .price-card-list li::before { content: ''; position: absolute; left: 47.5%; width: 5%; height: 1px; background: #AEAEAE; }
 
-.price .price-container .price-card .price-card-list li:first-child::before {
-  content: '';
-  display: none;
-}
+.price .price-container .price-card .price-card-list li:first-child::before { content: ''; display: none; }
 
-.price .price-container .price-card .price-card-btn {
-  width: 130px;
-  height: 40px;
-  /*justify-content: center;
-                align-items: center;*/
-  background: #AEAEAE;
-  border: none;
-  border-radius: 17px;
-  /*margin-top: 20px;*/
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-weight: 900;
-  font-size: .7em;
-  letter-spacing: .1em;
-}
+.price .price-container .price-card .price-card-btn { width: 130px; height: 40px; background: #AEAEAE; border: none; border-radius: 17px; /*margin-top: 20px;*/ text-transform: uppercase; color: #FFFFFF; font-weight: 900; font-size: .7em; letter-spacing: .1em; transition: all 0.2s ease-in-out; }
 
-.price .price-container .price-card .price-card-btn:hover {
-  cursor: pointer;
-  background: #B28657;
-  color: #FFFFFF;
-  border: 2px solid #B28657;
-}
+.price .price-container .price-card .price-card-btn:hover { cursor: pointer; background: #D1AB82; }
 
-.price .price-container .price-card .price-card-btn:focus {
-  outline-style: none;
-}
-
-/*# sourceMappingURL=price.css.map */
+.price .price-container .price-card .price-card-btn:focus { outline-style: none; }

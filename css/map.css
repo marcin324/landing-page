@@ -1,38 +1,15 @@
+/* VARIABLES */
+@keyframes icon-up { 0% { font-size: 1em; }
+  40% { font-size: 1em; }
+  50% { font-size: 2em; }
+  60% { font-size: 1em; }
+  100% { font-size: 1em; } }
+
 /* MAP */
-.map-background {
-  position: relative;
-  min-height: 415px;
-  width: 100%;
-  background: url("../images/map.png");
-  /*object-fit: cover;*/
-  /*background-size: cover;
-    background-position: center;*/
-}
+.map-background { position: relative; min-height: 415px; width: 100%; background: url("../images/map.png"); }
 
-.map-background .map-contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 40%;
-  /*600px*/
-  height: 80%;
-  /*345px*/
-  background-color: #FFFFFF;
-}
+.map-background .map-contact-info { display: flex; flex-direction: column; justify-content: center; position: absolute; top: 10%; left: 10%; width: 40%; height: 80%; background-color: #FFFFFF; }
 
-.map-background .map-contact-info div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0 5px 40px;
-}
+.map-background .map-contact-info div { display: flex; justify-content: center; align-items: center; margin: 10px 0 5px 40px; }
 
-.map-background .map-contact-info div p {
-  flex-basis: 90%;
-  color: #AEAEAE;
-}
-
-/*# sourceMappingURL=map.css.map */
+.map-background .map-contact-info div p { flex-basis: 90%; color: #AEAEAE; }

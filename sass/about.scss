@@ -1,7 +1,9 @@
+@import 'mixins.scss';
+
 /* ABOUT */
 
 .about {
-    background: #F7F7F7;
+    background: $backgroundColor;
 
     .about-head {
         padding: 40px 0;
@@ -13,7 +15,7 @@
     p {
         padding-top: 10px;
         font-size: .8em;
-        color: #AEAEAE;
+        color: $grey;
     }
 
     .about-content {
@@ -29,34 +31,12 @@
 
             p {
                 padding: 0;
-                color: #555;
+                color: $grey;
                 font-size: .9em;
             }
 
             .about-btn {
-                width: 160px;
-                height: 40px;
-                background: #B28657;
-                border: none;
-                border-radius: 17px;
-                margin-top: 20px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                font-weight: 900;
-                font-size: .7em;
-                letter-spacing: .1em;
-
-                &:hover {
-                    cursor: pointer;
-                    background: #F7F7F7;
-                    color: #B28657;
-                    border: 2px solid #B28657;
-
-                }
-
-                &:focus {
-                    outline-style: none;
-                }
+                @include goldButton(20px, 0);
             }
         }
 
