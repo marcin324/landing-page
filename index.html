@@ -22,15 +22,15 @@
 			<nav class="container container-nav">
 				<img src="images/logo.png" alt="logo">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Our projects</a></li>
-					<li><a href="#">Our team</a></li>
-					<li><a href="#">Happy Clients</a></li>
-					<li><a href="#">Price</a></li>
-					<li><a href="#">Some Facts</a></li>
-					<li><a href="#">Contact us</a></li>
+					<li><a href="#" class="">Home</a></li>
+					<li><a href="#" class="about-nav">About us</a></li>
+					<li><a href="#" class="services-nav">Services</a></li>
+					<li><a href="#" class="projects-nav">Our projects</a></li>
+					<li><a href="#" class="team-nav">Our team</a></li>
+					<li><a href="#" class="clients-nav">Happy Clients</a></li>
+					<li><a href="#" class="price-nav">Price</a></li>
+					<li><a href="#" class="facts-nav">Some Facts</a></li>
+					<li><a href="#" class="contact-nav">Contact us</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -49,7 +49,7 @@
 
 		<!-- ABOUT -->
 
-		<section class="about">
+		<section data-section="about-nav" class="about">
 			<div class="about-head">
 				<h2>About us</h2>
 				<p>Who we are?</p>
@@ -71,7 +71,7 @@
 
 		<!-- SERVICES -->
 
-		<section class="services">
+		<section data-section="services-nav" class="services">
 			<div class="services-head">
 				<h2>Services</h2>
 				<p>Services that we provide</p>
@@ -101,7 +101,7 @@
 					</div>
 					<div class="services-text">
 						<h4>Regular<br>updates</h4>
-						<p>Praesent metus uma, feugiata</p>
+						<p>Praesent metus uma, feugiata placerat elementum at leo</p>
 					</div>
 				</div>
 				<div class="services-content-box">
@@ -118,7 +118,7 @@
 
 		<!-- OUR PROJECTS -->
 
-		<section class="projects">
+		<section data-section="projects-nav" class="projects">
 			<div class="projects-head">
 				<h2>Our Projects</h2>
 				<p>What we create</p>
@@ -186,7 +186,7 @@
 
 		<!-- TEAM -->
 
-		<section class="team">
+		<section data-section="team-nav" class="team">
 			<div class="team-background">
 				<div class="team-head">
 					<h2>Our Team</h2>
@@ -247,7 +247,7 @@
 
 		<!-- CLIENTS -->
 
-		<section class="clients">
+		<section data-section="clients-nav" class="clients">
 			<div class="clients-head">
 				<h2>Happy clients</h2>
 				<p>client reviews</p>
@@ -282,7 +282,7 @@
 
 		<!-- PRICE -->
 
-		<section class="price">
+		<section data-section="price-nav" class="price">
 			<div class="price-head">
 				<h2>Price</h2>
 				<p>pricing table</p>
@@ -401,7 +401,7 @@
 
 		<!-- FACTS -->
 
-		<section class="facts">
+		<section data-section="facts-nav" class="facts">
 			<div class="facts-head">
 				<h2>Some facts</h2>
 				<p>About our work</p>
@@ -458,7 +458,7 @@
 
 		<!-- CONTACT -->
 
-		<section class="contact">
+		<section data-section="contact-nav" class="contact">
 			<div class="contact-head">
 				<h2>Contact us</h2>
 				<p>Our agency located in Melbourne, Australia</p>
@@ -516,6 +516,7 @@
 		<!-- FOOTER -->
 
 		<section class="footer">
+			<div class="btn-up"><i class="icon-up-open-big"></i></div>
 			<div class="footer-container">
 				<div class="footer-social-media">
 					<div>
@@ -549,8 +550,9 @@
 		</section>
 
 	</div>
-
-	<script src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
