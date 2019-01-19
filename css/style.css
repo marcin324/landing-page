@@ -72,7 +72,7 @@ header .container ul li a:hover::before { width: 100%; }
 /* HERO */
 .hero { height: 600px; background: url("../images/hero_background.png"); background-size: cover; background-position: center; }
 
-.hero .layer { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; height: 600px; text-transform: uppercase; }
+.hero .layer { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; height: 600px; text-transform: uppercase; }
 
 .hero .layer .slogan { color: #FFFFFF; font-weight: 900; text-align: center; }
 
@@ -102,9 +102,9 @@ header .container ul li a:hover::before { width: 100%; }
 
 .about p { padding-top: 10px; font-size: .8em; color: #AEAEAE; }
 
-.about .about-content { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; padding-bottom: 8%; }
+.about .about-content { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; /*flex-direction: row;*/ padding-bottom: 8%; }
 
-.about .about-content .about-text { -ms-flex: 55%; flex: 55%; text-align: left; padding-left: 10%; line-height: 1.6; }
+.about .about-content .about-text { -ms-flex-preferred-size: 55%; flex-basis: 55%; /*text-align: left;*/ padding-left: 10%; margin: 0 50px 0 0; line-height: 1.6; }
 
 .about .about-content .about-text p { padding: 0; color: #AEAEAE; font-size: .9em; }
 
@@ -114,9 +114,9 @@ header .container ul li a:hover::before { width: 100%; }
 
 .about .about-content .about-text .about-btn:focus { outline-style: none; }
 
-.about .about-content .about-video { -ms-flex: 45%; flex: 45%; text-align: center; padding-right: 10%; padding-left: 3%; }
+.about .about-content .about-video { -ms-flex-preferred-size: 45%; flex-basis: 45%; text-align: center; padding-right: 10%; margin: 0; /*padding-left: 3%;*/ }
 
-.about .about-content .video { height: 275px; width: 445px; }
+.about .about-content .video { height: 100%; /*275px;*/ width: 100%; }
 
 /* VARIABLES */
 @keyframes icon-up { 0% { font-size: 1em; }
@@ -144,7 +144,7 @@ header .container ul li a:hover::before { width: 100%; }
 
 .services .services-content .services-content-box .services-icon img { width: 23%; }
 
-.services .services-content .services-content-box .services-text { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: justify; justify-content: space-between; height: 50%; line-height: 1.6; padding: 0 10%; }
+.services .services-content .services-content-box .services-text { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; height: 50%; line-height: 1.6; padding: 0 10%; }
 
 .services .services-content .services-content-box .services-text h4 { text-transform: uppercase; }
 
@@ -218,7 +218,7 @@ header .container ul li a:hover::before { width: 100%; }
 
 .team-background .team-head p { padding-top: 10px; font-size: .8em; color: #AEAEAE; }
 
-.team-background .team-container { width: 100%; margin-top: 20px; padding: 0 10%; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
+.team-background .team-container { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; width: 100%; margin: 10px 0; padding: 0 10%; /*display: flex; justify-content: space-between;*/ }
 
 .team-background .team-container .team-card { height: 430px; width: 330px; margin: 0; background-color: #FFFFFF; text-align: center; }
 
@@ -266,7 +266,7 @@ header .container ul li a:hover::before { width: 100%; }
   100% { font-size: 1em; } }
 
 /* LOGOS */
-.logos-images { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-align: center; align-items: center; min-height: 25vh; padding: 0 11%; border-top: 1px solid #CFCFCF; border-bottom: 1px solid #CFCFCF; background-color: #FFFFFF; }
+.logos-images { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-align: center; align-items: center; min-height: 25vh; padding: 0 11%; border-top: 1px solid #CFCFCF; border-bottom: 1px solid #CFCFCF; background-color: #FFFFFF; }
 
 /* VARIABLES */
 @keyframes icon-up { 0% { font-size: 1em; }
@@ -282,9 +282,9 @@ header .container ul li a:hover::before { width: 100%; }
 
 .price .price-head p { padding-top: 10px; font-size: .8em; color: #AEAEAE; }
 
-.price .price-container { width: 100%; margin-top: 20px; padding: 0 10%; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
+.price .price-container { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; width: 100%; margin: 10px 0; padding: 0 10%; }
 
-.price .price-container .price-card { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: justify; justify-content: space-between; width: 245px; height: 345px; padding: 35px 0; margin: 0; background-color: #FFFFFF; text-align: center; }
+.price .price-container .price-card { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; width: 245px; height: 345px; padding: 35px 0; margin: 0; background-color: #FFFFFF; text-align: center; }
 
 .price .price-container .price-card p { font-size: 1em; text-transform: uppercase; padding-bottom: 10px; }
 

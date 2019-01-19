@@ -64,3 +64,24 @@ $pinterestColor: #B81C2A;
         outline-style: none;
     }
 }
+
+@mixin flexCenter ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexBetween ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexAround ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: space-around;
+    align-items: center;
+}

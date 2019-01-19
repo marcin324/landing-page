@@ -48,9 +48,7 @@
             }
 
             .services-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                @include flexBetween (column);
                 height: 50%;
                 line-height: 1.6;
                 padding: 0 10%;

@@ -24,7 +24,7 @@
 
 .services .services-content .services-content-box .services-icon img { width: 23%; }
 
-.services .services-content .services-content-box .services-text { display: flex; flex-direction: column; justify-content: space-between; height: 50%; line-height: 1.6; padding: 0 10%; }
+.services .services-content .services-content-box .services-text { display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 50%; line-height: 1.6; padding: 0 10%; }
 
 .services .services-content .services-content-box .services-text h4 { text-transform: uppercase; }
 

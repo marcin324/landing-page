@@ -8,7 +8,7 @@
 /* HERO */
 .hero { height: 600px; background: url("../images/hero_background.png"); background-size: cover; background-position: center; }
 
-.hero .layer { display: flex; justify-content: center; align-items: center; height: 600px; text-transform: uppercase; }
+.hero .layer { display: flex; flex-direction: row; justify-content: center; align-items: center; height: 600px; text-transform: uppercase; }
 
 .hero .layer .slogan { color: #FFFFFF; font-weight: 900; text-align: center; }
 

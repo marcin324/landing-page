@@ -12,9 +12,9 @@
 
 .about p { padding-top: 10px; font-size: .8em; color: #AEAEAE; }
 
-.about .about-content { display: flex; flex-direction: row; padding-bottom: 8%; }
+.about .about-content { display: flex; justify-content: space-around; /*flex-direction: row;*/ padding-bottom: 8%; }
 
-.about .about-content .about-text { flex: 55%; text-align: left; padding-left: 10%; line-height: 1.6; }
+.about .about-content .about-text { flex-basis: 55%; /*text-align: left;*/ padding-left: 10%; margin: 0 50px 0 0; line-height: 1.6; }
 
 .about .about-content .about-text p { padding: 0; color: #AEAEAE; font-size: .9em; }
 
@@ -24,6 +24,6 @@
 
 .about .about-content .about-text .about-btn:focus { outline-style: none; }
 
-.about .about-content .about-video { flex: 45%; text-align: center; padding-right: 10%; padding-left: 3%; }
+.about .about-content .about-video { flex-basis: 45%; text-align: center; padding-right: 10%; margin: 0; /*padding-left: 3%;*/ }
 
-.about .about-content .video { height: 275px; width: 445px; }
+.about .about-content .video { height: 100%; /*275px;*/ width: 100%; }

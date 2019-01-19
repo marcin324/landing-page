@@ -14,7 +14,7 @@
 
 .team-background .team-head p { padding-top: 10px; font-size: .8em; color: #AEAEAE; }
 
-.team-background .team-container { width: 100%; margin-top: 20px; padding: 0 10%; display: flex; justify-content: space-between; }
+.team-background .team-container { display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; margin: 10px 0; padding: 0 10%; /*display: flex; justify-content: space-between;*/ }
 
 .team-background .team-container .team-card { height: 430px; width: 330px; margin: 0; background-color: #FFFFFF; text-align: center; }
 
