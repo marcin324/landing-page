@@ -1,9 +1,33 @@
 /* VARIABLES */
-@keyframes icon-up { 0% { font-size: 1em; }
-  40% { font-size: 1em; }
-  50% { font-size: 2em; }
-  60% { font-size: 1em; }
-  100% { font-size: 1em; } }
+@keyframes icon-up {
+  0% {
+    font-size: 1em;
+  }
+  40% {
+    font-size: 1em;
+  }
+  50% {
+    font-size: 2em;
+  }
+  60% {
+    font-size: 1em;
+  }
+  100% {
+    font-size: 1em;
+  }
+}
 
 /* LOGOS */
-.logos-images { display: flex; flex-direction: row; justify-content: space-around; align-items: center; min-height: 25vh; padding: 0 11%; border-top: 1px solid #CFCFCF; border-bottom: 1px solid #CFCFCF; background-color: #FFFFFF; }
+.logos-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 25vh;
+  padding: 0 11%;
+  border-top: 1px solid #CFCFCF;
+  border-bottom: 1px solid #CFCFCF;
+  background-color: #FFFFFF;
+}
+
+/*# sourceMappingURL=logos.css.map */

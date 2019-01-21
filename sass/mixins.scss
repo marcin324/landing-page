@@ -65,6 +65,15 @@ $pinterestColor: #B81C2A;
     }
 }
 
+@mixin flex($direction, $justifyContent, $alignItems, $alignContent, $flexWrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    align-content: $alignContent;
+    flex-wrap: $flexWrap;
+}
+
 @mixin flexCenter ($flexDirection) {
     display: flex;
     flex-direction: $flexDirection;

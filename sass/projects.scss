@@ -53,13 +53,7 @@
             cursor: pointer;
 
             &::before {
-                /*content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;*/
                 transform: scale(1);
-                /*height: 3px;
-                background: $gold;*/
             }
 
             &:focus {
@@ -73,13 +67,8 @@
             border-bottom-left-radius: 25px;
 
             &::before {
-                /*content: '';
-                position: absolute;
-                bottom: 0;*/
                 left: 25%;
                 width: 75%;
-                /*height: 3px;
-                background: $gold;*/
             }
         }
 
@@ -89,13 +78,7 @@
             border-bottom-right-radius: 25px;
 
             &::before {
-                /*content: '';
-                position: absolute;
-                bottom: 0;*/
-                /*left: 0;*/
                 width: 75%;
-                /*height: 3px;
-                background: $gold;*/
             }
         }
     }

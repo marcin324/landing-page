@@ -34,64 +34,94 @@
     }
 
     .tell_about-social-media {
-        display: flex;
+        @include flexAround(row);
         flex-basis: 70%;
-        justify-content: space-around;
-        align-items: center;
         margin: 0;
 
         a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 35px;
-            height: 35px;
             text-decoration: none;
-            border-radius: 50%;
-            transition: $transition;
+
+            &:before {
+                @include flexCenter(row);
+                width: 35px;
+                height: 35px;
+                margin: 0;
+                color: $white;
+                transition: $transition;
+            }
 
             &:nth-child(1) {
-                background-color: $twitterColor;
+                &:before {
+                    border-radius: 50%;
+                    background-color: $twitterColor;
+                }
 
                 &:hover {
-                    background-color: $white;
-                    box-shadow: 0 0 1px 1px $twitterColor;
+                    &:before {
+                        color: $twitterColor;
+                        background-color: $white;
+                        box-shadow: 0 0 1px 1px $twitterColor;
+                    }
                 }
             }
 
             &:nth-child(2) {
-                background-color: $linkedinColor;
+                &:before {
+                    border-radius: 50%;
+                    background-color: $linkedinColor;
+                }
 
                 &:hover {
-                    background-color: $white;
-                    box-shadow: 0 0 1px 1px $linkedinColor;
+                    &:before {
+                        color: $linkedinColor;
+                        background-color: $white;
+                        box-shadow: 0 0 1px 1px $twitterColor;
+                    }
                 }
             }
 
             &:nth-child(3) {
-                background-color: $facebookColor;
+                &:before {
+                    border-radius: 50%;
+                    background-color: $facebookColor;
+                }
 
                 &:hover {
-                    background-color: $white;
-                    box-shadow: 0 0 1px 1px $facebookColor;
+                    &:before {
+                        color: $facebookColor;
+                        background-color: $white;
+                        box-shadow: 0 0 1px 1px $facebookColor;
+                    }
                 }
             }
 
             &:nth-child(4) {
-                background-color: $googleColor;
+                &:before {
+                    border-radius: 50%;
+                    background-color: $googleColor;
+                }
 
                 &:hover {
-                    background-color: $white;
-                    box-shadow: 0 0 1px 1px $googleColor;
+                    &:before {
+                        color: $googleColor;
+                        background-color: $white;
+                        box-shadow: 0 0 1px 1px $googleColor;
+                    }
                 }
             }
 
             &:nth-child(5) {
-                background-color: $pinterestColor;
+                &:before {
+                    border-radius: 50%;
+                    background-color: $pinterestColor;
+                }
 
                 &:hover {
-                    background-color: $white;
-                    box-shadow: 0 0 1px 1px $pinterestColor;
+                    &:before {
+                        color: $pinterestColor;
+                        background-color: $white;
+                        box-shadow: 0 0 1px 1px $pinterestColor;
+                    }
                 }
             }
         }

@@ -31,7 +31,7 @@ header {
                     line-height: 65px;
                     padding: 0 10px;
                     color: $white;
-                    font-size: 0.8em;
+                    font-size: .8em;
                     font-weight: 999;
                     word-spacing: .2em;
                     transition: $transition;
@@ -55,6 +55,37 @@ header {
                         &::before {
                             width: 100%;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    header {
+
+        .container-nav {
+            padding: 0;
+        }
+
+        .container {
+            height: 100%;
+
+            img {
+                display: none;
+            }
+
+            ul {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+                li {
+
+                    a {
+                        width: 100%;
                     }
                 }
             }

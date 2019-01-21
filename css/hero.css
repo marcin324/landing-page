@@ -1,25 +1,81 @@
 /* VARIABLES */
-@keyframes icon-up { 0% { font-size: 1em; }
-  40% { font-size: 1em; }
-  50% { font-size: 2em; }
-  60% { font-size: 1em; }
-  100% { font-size: 1em; } }
+@keyframes icon-up {
+  0% {
+    font-size: 1em;
+  }
+  40% {
+    font-size: 1em;
+  }
+  50% {
+    font-size: 2em;
+  }
+  60% {
+    font-size: 1em;
+  }
+  100% {
+    font-size: 1em;
+  }
+}
 
 /* HERO */
-.hero { height: 600px; background: url("../images/hero_background.png"); background-size: cover; background-position: center; }
+.hero {
+  height: 600px;
+  background: url("../images/hero_background.png");
+  background-size: cover;
+  background-position: center;
+}
 
-.hero .layer { display: flex; flex-direction: row; justify-content: center; align-items: center; height: 600px; text-transform: uppercase; }
+.hero .layer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  text-transform: uppercase;
+}
 
-.hero .layer .slogan { color: #FFFFFF; font-weight: 900; text-align: center; }
+.hero .layer .slogan {
+  color: #FFFFFF;
+  font-weight: 900;
+  text-align: center;
+}
 
-.hero .layer .slogan h1 { font-size: 4em; }
+.hero .layer .slogan h1 {
+  font-size: 4em;
+}
 
-.hero .layer .slogan h1 span { color: #B28657; }
+.hero .layer .slogan h1 span {
+  color: #B28657;
+}
 
-.hero .layer .slogan p { margin-top: 8px; letter-spacing: .1em; }
+.hero .layer .slogan p {
+  margin-top: 8px;
+  letter-spacing: .1em;
+}
 
-.hero .layer .slogan .btn-hero { width: 160px; height: 40px; background-color: #B28657; border: none; border-radius: 17px; margin-top: 40px; margin-bottom: 0; text-transform: uppercase; color: #FFFFFF; font-weight: 900; font-size: .7em; letter-spacing: .1em; transition: all 0.2s ease-in-out; }
+.hero .layer .slogan .btn-hero {
+  width: 160px;
+  height: 40px;
+  background-color: #B28657;
+  border: none;
+  border-radius: 17px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: .7em;
+  letter-spacing: .1em;
+  transition: all 0.2s ease-in-out;
+}
 
-.hero .layer .slogan .btn-hero:hover { cursor: pointer; background: #D1AB82; }
+.hero .layer .slogan .btn-hero:hover {
+  cursor: pointer;
+  background: #D1AB82;
+}
 
-.hero .layer .slogan .btn-hero:focus { outline-style: none; }
+.hero .layer .slogan .btn-hero:focus {
+  outline-style: none;
+}
+
+/*# sourceMappingURL=hero.css.map */

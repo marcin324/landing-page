@@ -28,8 +28,6 @@
         width: 100%;
         margin: 10px 0;
         padding: 0 10%;
-        /*display: flex;
-        justify-content: space-between;*/
 
         .team-card {
             height: 430px;
@@ -49,24 +47,31 @@
                 line-height: 40px;
             }
         }
-    }
 
-    .team-icons {
-        display: flex;
-        margin: 25px 25px 0 25px;
+        .team-icons {
+            @include flexBetween(row);
+            margin: 25px 25px 0 25px;
 
-        a {
-            width: 35px;
-            height: 35px;
-            background-color: $iconColor;
-            text-align: center;
-            text-decoration: none;
-            line-height: 32px;
-            border-radius: 50%;
-            transition: $transition;
+            a {
+                margin: 0;
+                text-decoration: none;
 
-            &:hover {
-                background: $goldHover;
+                &:before {
+                    @include flexCenter(row);
+                    width: 35px;
+                    height: 35px;
+                    margin: 0;
+                    color: $white;
+                    background-color: $iconColor;
+                    border-radius: 50%;
+                    transition: $transition;
+                }
+
+                &:hover {
+                    &:before {
+                        background: $goldHover;
+                    }
+                }
             }
         }
     }

@@ -20,10 +20,21 @@
         background-color: $white;
 
         div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexCenter(row);
             margin: 10px 0 5px 40px;
+
+            i {
+                margin: 0;
+
+                &:before {
+                    @include flexCenter(row);
+                    width: 35px;
+                    height: 35px;
+                    margin: 0;
+                    background-color: $iconColor;
+                    border-radius: 50%;
+                }
+            }
 
             p {
                 flex-basis: 90%;

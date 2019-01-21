@@ -1,25 +1,99 @@
 /* VARIABLES */
-@keyframes icon-up { 0% { font-size: 1em; }
-  40% { font-size: 1em; }
-  50% { font-size: 2em; }
-  60% { font-size: 1em; }
-  100% { font-size: 1em; } }
+@keyframes icon-up {
+  0% {
+    font-size: 1em;
+  }
+  40% {
+    font-size: 1em;
+  }
+  50% {
+    font-size: 2em;
+  }
+  60% {
+    font-size: 1em;
+  }
+  100% {
+    font-size: 1em;
+  }
+}
 
 /* HEADER */
-header { background: #000000; height: 65px; }
+header {
+  background: #000000;
+  height: 65px;
+}
 
-header .container-nav { margin-top: 0; padding: 0 10%; }
+header .container-nav {
+  margin-top: 0;
+  padding: 0 10%;
+}
 
-header .container { width: 100%; max-width: 1300px; }
+header .container {
+  width: 100%;
+  max-width: 1300px;
+}
 
-header .container ul { list-style-type: none; float: right; overflow: hidden; }
+header .container ul {
+  list-style-type: none;
+  float: right;
+  overflow: hidden;
+}
 
-header .container ul li { display: inline-block; }
+header .container ul li {
+  display: inline-block;
+}
 
-header .container ul li a { position: relative; text-decoration: none; text-transform: uppercase; display: block; line-height: 65px; padding: 0 10px; color: #FFFFFF; font-size: 0.8em; font-weight: 999; word-spacing: .2em; transition: all 0.2s ease-in-out; }
+header .container ul li a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  line-height: 65px;
+  padding: 0 10px;
+  color: #FFFFFF;
+  font-size: .8em;
+  font-weight: 999;
+  word-spacing: .2em;
+  transition: all 0.2s ease-in-out;
+}
 
-header .container ul li a::before { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: #B28657; transition: all 0.2s ease-in-out; }
+header .container ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #B28657;
+  transition: all 0.2s ease-in-out;
+}
 
-header .container ul li a:hover { background-color: #2C2A2A; }
+header .container ul li a:hover {
+  background-color: #2C2A2A;
+}
 
-header .container ul li a:hover::before { width: 100%; }
+header .container ul li a:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  header .container-nav {
+    padding: 0;
+  }
+  header .container {
+    height: 100%;
+  }
+  header .container img {
+    display: none;
+  }
+  header .container ul {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  header .container ul li a {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

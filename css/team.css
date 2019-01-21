@@ -1,29 +1,103 @@
 /* VARIABLES */
-@keyframes icon-up { 0% { font-size: 1em; }
-  40% { font-size: 1em; }
-  50% { font-size: 2em; }
-  60% { font-size: 1em; }
-  100% { font-size: 1em; } }
+@keyframes icon-up {
+  0% {
+    font-size: 1em;
+  }
+  40% {
+    font-size: 1em;
+  }
+  50% {
+    font-size: 2em;
+  }
+  60% {
+    font-size: 1em;
+  }
+  100% {
+    font-size: 1em;
+  }
+}
 
 /* TEAM */
-.team-background { min-height: 100vh; background: url("../images/our_team_background-awax.png"); }
+.team-background {
+  min-height: 100vh;
+  background: url("../images/our_team_background-awax.png");
+}
 
-.team-background .team-head { padding: 40px 0; text-align: center; text-transform: uppercase; font-weight: bold; }
+.team-background .team-head {
+  padding: 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-.team-background .team-head h2 { color: #FFFFFF; }
+.team-background .team-head h2 {
+  color: #FFFFFF;
+}
 
-.team-background .team-head p { padding-top: 10px; font-size: .8em; color: #AEAEAE; }
+.team-background .team-head p {
+  padding-top: 10px;
+  font-size: .8em;
+  color: #AEAEAE;
+}
 
-.team-background .team-container { display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; margin: 10px 0; padding: 0 10%; /*display: flex; justify-content: space-between;*/ }
+.team-background .team-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 10%;
+}
 
-.team-background .team-container .team-card { height: 430px; width: 330px; margin: 0; background-color: #FFFFFF; text-align: center; }
+.team-background .team-container .team-card {
+  height: 430px;
+  width: 330px;
+  margin: 0;
+  background-color: #FFFFFF;
+  text-align: center;
+}
 
-.team-background .team-container .team-card .team-img { margin: 50px auto 30px auto; }
+.team-background .team-container .team-card .team-img {
+  margin: 50px auto 30px auto;
+}
 
-.team-background .team-container .team-card h3 { text-transform: uppercase; font-size: 1.3em; letter-spacing: .1em; line-height: 40px; }
+.team-background .team-container .team-card h3 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: .1em;
+  line-height: 40px;
+}
 
-.team-background .team-icons { display: flex; margin: 25px 25px 0 25px; }
+.team-background .team-container .team-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 25px 0 25px;
+}
 
-.team-background .team-icons a { width: 35px; height: 35px; background-color: #BEBEBE; text-align: center; text-decoration: none; line-height: 32px; border-radius: 50%; transition: all 0.2s ease-in-out; }
+.team-background .team-container .team-icons a {
+  margin: 0;
+  text-decoration: none;
+}
 
-.team-background .team-icons a:hover { background: #D1AB82; }
+.team-background .team-container .team-icons a:before {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  color: #FFFFFF;
+  background-color: #BEBEBE;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.team-background .team-container .team-icons a:hover:before {
+  background: #D1AB82;
+}
+
+/*# sourceMappingURL=team.css.map */
