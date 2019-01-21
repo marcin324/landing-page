@@ -22,7 +22,7 @@
     .price-container {
         @include flexBetween(row);
         width: 100%;
-        margin: 10px 0;
+        margin: 10px 0 0;
         padding: 0 10%;
 
         .price-card {
