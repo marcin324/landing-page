@@ -13,7 +13,6 @@ menuElements.forEach((menuElement) => {
 
         window.scrollTo({
             top: document.querySelector('[data-section=' + goToSection + ']').offsetTop,
-            /*left: 0,*/
             behavior: 'smooth'
         });
     });
@@ -22,7 +21,6 @@ menuElements.forEach((menuElement) => {
 btnUp.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        /*left: 0,*/
         behavior: 'smooth'
     });
 });
@@ -44,15 +42,33 @@ window.addEventListener('scroll', () => {
 
 // jQuery
 
-/*$('nav a').on('click', function () {
+/*const $header = $('header');
+const $hero = $('.hero');
+const $iconUp = $('i.icon-up-open-big');
+
+$('nav a').on('click', function () {
     const goToSection = $(this).attr('class');
     $('body, html').animate({
         scrollTop: $('[data-section=' + goToSection + ']').offset().top
-    }, 1000)
+    }, 1000);
 });
 
 $('.btn-up').on('click', function () {
     $('body, html').animate({
-        scrollTop: $('header').offset().top
-    }, 1000)
+        scrollTop: $header.offset().top
+    }, 1000);
+});
+
+window.addEventListener('scroll', () => {
+    const heightScroll = $(document).scrollTop()
+    const headerHeight = $header.innerHeight();
+    const heroHeight = $hero.innerHeight();
+
+    if (heightScroll >= headerHeight + heroHeight) {
+        $iconUp.addClass('active');
+    }
+
+    if (heightScroll < headerHeight) {
+        $iconUp.removeClass('active');
+    }
 });*/

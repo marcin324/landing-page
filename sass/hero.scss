@@ -37,3 +37,22 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 400px;
+
+        .layer {
+            height: 400px;
+
+            .slogan {
+
+                h1 {
+                    font-size: 2em;
+                }
+            }
+
+        }
+    }
+}

@@ -3,7 +3,7 @@
 $transition: all .2s ease-in-out;
 
 $gold: #B28657;
-$goldHover: #D1AB82;
+$goldHover: #D1B18F;
 $white: #FFFFFF;
 $black: #000000;
 $grey: #AEAEAE;
@@ -63,15 +63,6 @@ $pinterestColor: #B81C2A;
     &:focus {
         outline-style: none;
     }
-}
-
-@mixin flex($direction, $justifyContent, $alignItems, $alignContent, $flexWrap) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
-    align-content: $alignContent;
-    flex-wrap: $flexWrap;
 }
 
 @mixin flexCenter ($flexDirection) {

@@ -92,3 +92,29 @@ header {
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+
+        .container-nav {}
+
+        .container {
+
+            img {}
+
+            ul {
+                float: none;
+
+                li {
+                    display: block;
+
+                    a {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

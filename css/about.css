@@ -73,7 +73,7 @@
 
 .about .about-content .about-text .about-btn:hover {
   cursor: pointer;
-  background: #D1AB82;
+  background: #D1B18F;
 }
 
 .about .about-content .about-text .about-btn:focus {
@@ -90,6 +90,36 @@
 .about .about-content .video {
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .about .about-content .video {
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-top: 65px;
+  }
+  .about .about-content {
+    display: block;
+    padding-bottom: 0;
+  }
+  .about .about-content .about-text {
+    padding-left: 0;
+    margin: 0 50px 40px 50px;
+  }
+  .about .about-content .about-video {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .about .about-content .video {
+    height: auto;
+    width: 90%;
+    /*max-width: 100%;*/
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

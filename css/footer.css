@@ -70,13 +70,12 @@
   margin: 0;
   color: #FFFFFF;
   background-color: #373737;
-  /*text-decoration: none;*/
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
 }
 
 .footer .footer-container .footer-social-media div a:hover:before {
-  background-color: #D1AB82;
+  background-color: #D1B18F;
 }
 
 .footer .footer-container .footer-social-media p {
@@ -148,7 +147,7 @@
 
 .footer .footer-container .footer-subscribe .subscribe-btn-container .subscribe-btn:hover {
   cursor: pointer;
-  background: #D1AB82;
+  background: #D1B18F;
 }
 
 .footer .footer-container .footer-subscribe .subscribe-btn-container .subscribe-btn:focus {
@@ -180,7 +179,7 @@
 }
 
 .footer .btn-up:hover i:before {
-  background-color: #D1AB82;
+  background-color: #D1B18F;
 }
 
 /*# sourceMappingURL=footer.css.map */

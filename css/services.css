@@ -44,6 +44,7 @@
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 0 10%;
   text-align: center;
 }
@@ -83,6 +84,30 @@
 .services .services-content .services-content-box .services-text p {
   color: #AEAEAE;
   font-size: .7em;
+}
+
+@media (max-width: 1200px) {
+  .services .services-content {
+    padding: 0;
+  }
+  .services .services-content .services-content-box:first-child {
+    border-left: none;
+  }
+  .services .services-content .services-content-box:last-child {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .services .services-content .services-content-box {
+    flex-basis: 50%;
+  }
+  .services .services-content .services-content-box:nth-child(1) {
+    border-bottom: 1px solid #AEAEAE;
+  }
+  .services .services-content .services-content-box:nth-child(2) {
+    border-bottom: 1px solid #AEAEAE;
+  }
 }
 
 /*# sourceMappingURL=services.css.map */

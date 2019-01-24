@@ -96,4 +96,19 @@ header .container ul li a:hover::before {
   }
 }
 
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+  header .container ul {
+    float: none;
+  }
+  header .container ul li {
+    display: block;
+  }
+  header .container ul li a {
+    padding: 0;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */

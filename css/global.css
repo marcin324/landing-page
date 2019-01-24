@@ -64,10 +64,15 @@
 }
 
 .row::after,
+.clearfix::after,
 .row::before {
   content: "";
   display: table;
   clear: both;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=global.css.map */

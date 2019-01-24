@@ -71,11 +71,23 @@
 
 .hero .layer .slogan .btn-hero:hover {
   cursor: pointer;
-  background: #D1AB82;
+  background: #D1B18F;
 }
 
 .hero .layer .slogan .btn-hero:focus {
   outline-style: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+  .hero .layer {
+    height: 400px;
+  }
+  .hero .layer .slogan h1 {
+    font-size: 2em;
+  }
 }
 
 /*# sourceMappingURL=hero.css.map */
