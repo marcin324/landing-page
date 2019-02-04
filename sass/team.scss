@@ -5,6 +5,10 @@
 .team-background {
     min-height: 100vh;
     background: url('../images/our_team_background-awax.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
     .team-head {
         padding: 40px 0;
@@ -26,12 +30,11 @@
     .team-container {
         @include flexBetween(row);
         width: 100%;
-        margin: 10px 0;
+        margin: 10px 0 0;
         padding: 0 10%;
 
         .team-card {
             height: 430px;
-            width: 330px;
             margin: 0;
             background-color: $white;
             text-align: center;
@@ -72,6 +75,23 @@
                         background: $goldHover;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .team-background {
+
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: space-around;
+
+            .team-card {
+                margin-bottom: 50px;
             }
         }
     }

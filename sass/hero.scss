@@ -3,14 +3,16 @@
 /* HERO */
 
 .hero {
-    height: 600px;
+    height: 100vh;
     background: url('../images/hero_background.png');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     .layer {
         @include flexCenter(row);
-        height: 600px;
+        height: 100%;
         text-transform: uppercase;
 
         .slogan {
@@ -38,13 +40,17 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 825px) {
 
     .hero {
-        height: 400px;
 
         .layer {
-            height: 400px;
+            @include flexAround(row);
+            transition: .3s;
+
+            &.move {
+                padding-top: 225px;
+            }
 
             .slogan {
 

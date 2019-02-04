@@ -86,7 +86,7 @@
   font-size: .7em;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .services .services-content {
     padding: 0;
   }
@@ -98,15 +98,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+  .services {
+    padding-bottom: 25px;
+  }
   .services .services-content .services-content-box {
     flex-basis: 50%;
-  }
-  .services .services-content .services-content-box:nth-child(1) {
-    border-bottom: 1px solid #AEAEAE;
-  }
-  .services .services-content .services-content-box:nth-child(2) {
-    border-bottom: 1px solid #AEAEAE;
+    padding-bottom: 8%;
   }
 }
 

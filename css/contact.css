@@ -37,15 +37,15 @@
 
 .contact .contact-content {
   width: 40%;
-  height: 260px;
+  height: 40vh;
 }
 
 .contact .contact-content .contact-form {
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-content: space-between;
   flex-wrap: wrap;
+  height: 100%;
   padding-top: 40px;
 }
 
@@ -68,8 +68,6 @@
   padding: 10px 0;
   border: none;
   border-bottom: 2px solid #AEAEAE;
-  resize: none;
-  text-transform: uppercase;
   background-color: #F7F7F7;
 }
 
@@ -82,6 +80,7 @@
 .contact .contact-content .contact-form .contact-form-input textarea::placeholder {
   font-family: 'Lato', sans-serif;
   color: #AEAEAE;
+  text-transform: uppercase;
 }
 
 .contact .contact-content .contact-form .contact-form-input textarea {
@@ -114,8 +113,29 @@
   background: #D1B18F;
 }
 
-.contact .contact-btn-container .contact-btn:focus {
-  outline-style: none;
+@media (max-width: 1200px) {
+  .contact .contact-content {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact .contact-content {
+    height: 60vh;
+  }
+  .contact .contact-content .contact-form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .contact .contact-content .contact-form .contact-form-input {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 825px) {
+  .contact .contact-content {
+    width: 60vw;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */

@@ -21,6 +21,10 @@
 .team-background {
   min-height: 100vh;
   background: url("../images/our_team_background-awax.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .team-background .team-head {
@@ -46,13 +50,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 10px 0;
+  margin: 10px 0 0;
   padding: 0 10%;
 }
 
 .team-background .team-container .team-card {
   height: 430px;
-  width: 330px;
   margin: 0;
   background-color: #FFFFFF;
   text-align: center;
@@ -98,6 +101,18 @@
 
 .team-background .team-container .team-icons a:hover:before {
   background: #D1B18F;
+}
+
+@media (max-width: 1200px) {
+  .team-background .team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .team-background .team-container .team-card {
+    margin-bottom: 50px;
+  }
 }
 
 /*# sourceMappingURL=team.css.map */

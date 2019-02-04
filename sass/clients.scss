@@ -41,8 +41,22 @@
             margin: 0 20%;
 
             p {
+                text-align: $justify;
                 font-size: 17px;
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (max-width: 825px) {
+
+    .clients {
+
+        .clients-content {
+
+            .clients-text {
+                padding-bottom: 5%;
             }
         }
     }

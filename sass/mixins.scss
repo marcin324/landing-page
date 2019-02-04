@@ -18,6 +18,8 @@ $facebookColor: #336296;
 $googleColor: #E54338;
 $pinterestColor: #B81C2A;
 
+$justify: justify;
+
 @keyframes icon-up {
     0% {
         font-size: 1em;
@@ -58,10 +60,6 @@ $pinterestColor: #B81C2A;
     &:hover {
         cursor: pointer;
         background: $goldHover;
-    }
-
-    &:focus {
-        outline-style: none;
     }
 }
 

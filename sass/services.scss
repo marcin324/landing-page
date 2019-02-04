@@ -67,7 +67,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
 
     .services {
 
@@ -87,22 +87,16 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
 
     .services {
+        padding-bottom: 25px;
 
         .services-content {
 
             .services-content-box {
                 flex-basis: 50%;
-
-                &:nth-child(1) {
-                    border-bottom: 1px solid $grey;
-                }
-
-                &:nth-child(2) {
-                    border-bottom: 1px solid $grey;
-                }
+                padding-bottom: 8%;
             }
         }
     }

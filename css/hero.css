@@ -19,10 +19,12 @@
 
 /* HERO */
 .hero {
-  height: 600px;
+  height: 100vh;
   background: url("../images/hero_background.png");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .hero .layer {
@@ -30,7 +32,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 100%;
   text-transform: uppercase;
 }
 
@@ -74,16 +76,16 @@
   background: #D1B18F;
 }
 
-.hero .layer .slogan .btn-hero:focus {
-  outline-style: none;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: 400px;
-  }
+@media (max-width: 825px) {
   .hero .layer {
-    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: .3s;
+  }
+  .hero .layer.move {
+    padding-top: 225px;
   }
   .hero .layer .slogan h1 {
     font-size: 2em;

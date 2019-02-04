@@ -27,13 +27,13 @@
         color: $white;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         padding: 0 10%;
         text-align: center;
 
         .facts-content-box {
-            position: relative;
+            flex-basis: 15%;
             line-height: 1.6;
-            padding: 0 64px;
 
             .facts-data {
                 height: 100px;
@@ -46,23 +46,79 @@
 
                 h4 {
                     text-transform: uppercase;
+                    position: relative;
 
                     &::before {
                         content: '';
                         position: absolute;
                         width: 20px;
                         left: calc(50% - 10px);
-                        top: 52px;
+                        top: -3px;
                         height: 3px;
                         background-color: $grey;
                     }
                 }
             }
 
-            p.text {
+            p.facts-text {
                 color: $grey;
                 font-size: .7em;
                 padding-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .facts {
+
+        .facts-content {
+
+            .facts-content-box {
+                flex-basis: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .facts {
+
+        .facts-content {
+
+            .facts-content-box {
+                flex-basis: 34%;
+                padding: 20px 20px;
+                ;
+            }
+        }
+    }
+}
+
+@media (max-width: 825px) {
+
+    .facts {
+
+        .facts-content {
+
+            .facts-content-box {
+                padding: 20px 0;
+                ;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+
+    .facts {
+
+        .facts-content {
+
+            .facts-content-box {
+                padding: 20px 0;
             }
         }
     }

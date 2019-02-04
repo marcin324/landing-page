@@ -44,14 +44,14 @@
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 0 10%;
   text-align: center;
 }
 
 .facts .facts-content .facts-content-box {
-  position: relative;
+  flex-basis: 15%;
   line-height: 1.6;
-  padding: 0 64px;
 }
 
 .facts .facts-content .facts-content-box .facts-data {
@@ -66,6 +66,7 @@
 
 .facts .facts-content .facts-content-box .facts-data h4 {
   text-transform: uppercase;
+  position: relative;
 }
 
 .facts .facts-content .facts-content-box .facts-data h4::before {
@@ -73,15 +74,40 @@
   position: absolute;
   width: 20px;
   left: calc(50% - 10px);
-  top: 52px;
+  top: -3px;
   height: 3px;
   background-color: #AEAEAE;
 }
 
-.facts .facts-content .facts-content-box p.text {
+.facts .facts-content .facts-content-box p.facts-text {
   color: #AEAEAE;
   font-size: .7em;
   padding-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .facts .facts-content .facts-content-box {
+    flex-basis: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .facts .facts-content .facts-content-box {
+    flex-basis: 34%;
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 825px) {
+  .facts .facts-content .facts-content-box {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .facts .facts-content .facts-content-box {
+    padding: 20px 0;
+  }
 }
 
 /*# sourceMappingURL=facts.css.map */

@@ -20,14 +20,14 @@
 
     .contact-content {
         width: 40%;
-        height: 260px;
+        height: 40vh;
 
         .contact-form {
-            height: 100%;
             display: flex;
             justify-content: space-between;
             align-content: space-between;
             flex-wrap: wrap;
+            height: 100%;
             padding-top: 40px;
 
             .contact-form-input {
@@ -48,8 +48,6 @@
                     padding: 10px 0;
                     border: none;
                     border-bottom: 2px solid $grey;
-                    resize: none;
-                    text-transform: uppercase;
                     background-color: $backgroundColor;
 
                     &:focus {
@@ -59,6 +57,7 @@
                     &::placeholder {
                         font-family: 'Lato', sans-serif;
                         color: $grey;
+                        text-transform: uppercase;
                     }
                 }
 
@@ -75,6 +74,48 @@
 
         .contact-btn {
             @include goldButton(50px, 75px);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .contact {
+
+        .contact-content {
+
+            width: 50vw;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .contact {
+
+        .contact-content {
+
+            height: 60vh;
+
+            .contact-form {
+                flex-direction: column;
+                flex-wrap: nowrap;
+
+                .contact-form-input {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 825px) {
+
+    .contact {
+
+        .contact-content {
+
+            width: 60vw;
         }
     }
 }
