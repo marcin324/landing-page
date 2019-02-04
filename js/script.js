@@ -1,10 +1,18 @@
 // JS
 
 const header = document.querySelector('header');
+const burger = document.querySelector('.burger');
 const hero = document.querySelector('.hero');
+const layer = document.querySelector('.layer');
 const btnUp = document.querySelector('.btn-up');
 const iconUp = document.querySelector('i.icon-up-open-big');
 const menuElements = document.querySelectorAll('nav a');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('move');
+    layer.classList.toggle('move');
+    header.classList.toggle('move');
+});
 
 menuElements.forEach((menuElement) => {
     menuElement.addEventListener('click', () => {
@@ -27,14 +35,10 @@ btnUp.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
     const heightScroll = window.scrollY;
-    const headerHeight = header.clientHeight;
-    const heroHeight = hero.clientHeight;
 
-    if (heightScroll >= headerHeight + heroHeight) {
+    if (heightScroll > 500) {
         iconUp.classList.add('active');
-    }
-
-    if (heightScroll < 100) {
+    } else {
         iconUp.classList.remove('active');
     }
 });
@@ -42,9 +46,8 @@ window.addEventListener('scroll', () => {
 
 // jQuery
 
-/*const $header = $('header');
-const $hero = $('.hero');
-const $iconUp = $('i.icon-up-open-big');
+/*const $iconUp = $('i.icon-up-open-big');
+const headerHeight = $('header').innerHeight();
 
 $('nav a').on('click', function () {
     const goToSection = $(this).attr('class');
@@ -55,20 +58,22 @@ $('nav a').on('click', function () {
 
 $('.btn-up').on('click', function () {
     $('body, html').animate({
-        scrollTop: $header.offset().top
+        scrollTop: 0
     }, 1000);
 });
 
 window.addEventListener('scroll', () => {
     const heightScroll = $(document).scrollTop()
-    const headerHeight = $header.innerHeight();
-    const heroHeight = $hero.innerHeight();
 
-    if (heightScroll >= headerHeight + heroHeight) {
+    if (heightScroll > 500) {
         $iconUp.addClass('active');
-    }
-
-    if (heightScroll < headerHeight) {
+    } else {
         $iconUp.removeClass('active');
     }
+});
+
+$('.burger').on('click', function () {
+    $(this).toggleClass('move');
+    $('.layer').toggleClass('move');
+    $('header').toggleClass('move');
 });*/
