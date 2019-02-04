@@ -782,13 +782,13 @@ header .container ul li a:hover::before {
 }
 
 .projects .projects-btn:first-child {
-  padding: 0 0 0 30px;
+  /*padding: 0 0 0 30px;*/
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
 
 .projects .projects-btn:last-child {
-  padding: 0 30px 0 0;
+  /*padding: 0 30px 0 0;*/
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
