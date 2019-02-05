@@ -209,6 +209,7 @@ header .container img {
 }
 
 header .container ul {
+  margin-right: 40px;
   list-style-type: none;
   float: right;
   overflow: hidden;
@@ -324,6 +325,7 @@ header .container ul li a:hover::before {
     display: none;
   }
   header .container ul {
+    margin-right: 0;
     height: 100%;
     width: 100%;
     text-align: center;
