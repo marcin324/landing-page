@@ -1,201 +1,55 @@
 /* VARIABLES */
-@keyframes icon-up {
-  0% {
-    font-size: 1em;
-  }
-  40% {
-    font-size: 1em;
-  }
-  50% {
-    font-size: 2em;
-  }
-  60% {
-    font-size: 1em;
-  }
-  100% {
-    font-size: 1em;
-  }
-}
+@keyframes icon-up { 0% { font-size: 1em; }
+  40% { font-size: 1em; }
+  50% { font-size: 2em; }
+  60% { font-size: 1em; }
+  100% { font-size: 1em; } }
 
 /* HEADER */
-header {
-  background-color: #000000;
-  height: 65px;
-}
+header { background-color: #000000; height: 65px; }
 
-header .container-nav {
-  margin-top: 0;
-}
+header .container-nav { margin-top: 0; }
 
-header .container {
-  width: 100%;
-  max-width: 1300px;
-}
+header .container { width: 100%; height: 100%; max-width: 1300px; }
 
-header .container img {
-  padding-left: 7%;
-}
+header .container img { padding: 7px 0 7px 7%; }
 
-header .container ul {
-  margin-right: 40px;
-  list-style-type: none;
-  float: right;
-  overflow: hidden;
-}
+header .container ul { margin-right: 40px; list-style-type: none; float: right; overflow: hidden; }
 
-header .container ul li {
-  display: inline-block;
-}
+header .container ul li { display: inline-block; }
 
-header .container ul li a {
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  line-height: 65px;
-  padding: 0 10px;
-  color: #FFFFFF;
-  font-size: .8em;
-  font-weight: 999;
-  word-spacing: .2em;
-  transition: all 0.2s ease-in-out;
-}
+header .container ul li a { position: relative; text-decoration: none; text-transform: uppercase; display: block; line-height: 65px; padding: 0 10px; color: #FFFFFF; font-size: .8em; font-weight: 999; word-spacing: .2em; transition: all 0.2s ease-in-out; }
 
-header .container ul li a::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background-color: #B28657;
-  transition: all 0.2s ease-in-out;
-}
+header .container ul li a::before { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: #B28657; transition: all 0.2s ease-in-out; }
 
-header .container ul li a:hover {
-  color: #B28657;
-}
+header .container ul li a:hover { color: #B28657; }
 
-header .container ul li a:hover::before {
-  width: 100%;
-}
+header .container ul li a:hover::before { width: 100%; }
 
-@media (max-width: 1024px) {
-  header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-  .burger {
-    position: absolute;
-    display: block;
-    top: 15px;
-    right: 40px;
-    width: 50px;
-    height: 35px;
-    z-index: 2;
-    cursor: pointer;
-    transition: .2s linear;
-  }
-  .burger span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: #B28657;
-    border-radius: 5px;
-    transition: top .2s .2s linear, bottom .2s .2s linear, opacity .2s .2s linear, transform .2s .4s linear;
-  }
-  .burger span:nth-child(1) {
-    top: 0;
-  }
-  .burger span:nth-child(2) {
-    top: calc(50% - 3px);
-  }
-  .burger span:nth-child(3) {
-    bottom: 0;
-  }
-  .burger.move {
-    transform: rotate(-90deg);
-    margin-top: 65px;
-  }
-  .burger.move span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: #B28657;
-    transition: top .2s .2s linear, bottom .2s .2s linear, opacity .2s .2s linear, transform .2s .4s linear;
-  }
-  .burger.move span:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-  }
-  .burger.move span:nth-child(2) {
-    opacity: 0;
-  }
-  .burger.move span:nth-child(3) {
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-  }
-  header {
-    top: -65px;
-    transition: .3s;
-  }
-  header.move {
-    top: 0;
-  }
-  header .container {
-    height: 100%;
-  }
-  header .container img {
-    display: none;
-  }
-  header .container ul {
-    margin-right: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-  }
-  header .container ul li a {
-    width: 100%;
-  }
-}
+@media (max-width: 1024px) { header { position: absolute; top: 0; width: 100%; z-index: 1; }
+  .burger { position: absolute; display: block; top: 15px; right: 40px; width: 50px; height: 35px; z-index: 2; cursor: pointer; transition: .2s linear; }
+  .burger span { position: absolute; left: 0; width: 100%; height: 6px; background-color: #B28657; border-radius: 5px; transition: top .2s .2s linear, bottom .2s .2s linear, opacity .2s .2s linear, transform .2s .4s linear; }
+  .burger span:nth-child(1) { top: 0; }
+  .burger span:nth-child(2) { top: calc(50% - 3px); }
+  .burger span:nth-child(3) { bottom: 0; }
+  .burger.move { transform: rotate(-90deg); margin-top: 65px; }
+  .burger.move span { position: absolute; left: 0; width: 100%; height: 6px; background-color: #B28657; transition: top .2s .2s linear, bottom .2s .2s linear, opacity .2s .2s linear, transform .2s .4s linear; }
+  .burger.move span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+  .burger.move span:nth-child(2) { opacity: 0; }
+  .burger.move span:nth-child(3) { top: 50%; transform: translateY(-50%) rotate(-45deg); }
+  header { top: -65px; transition: .3s; }
+  header.move { top: 0; }
+  header .container { height: 100%; }
+  header .container img { display: none; }
+  header .container ul { margin-right: 0; height: 100%; width: 100%; text-align: center; }
+  header .container ul li a { width: 100%; } }
 
-@media (max-width: 825px) {
-  .burger.move {
-    margin-top: 0;
-  }
-  header {
-    top: -225px;
-    height: 225px;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  header .container ul {
-    margin-bottom: 0;
-    text-align: right;
-    padding-right: 90px;
-  }
-  header .container ul li {
-    display: block;
-  }
-  header .container ul li a {
-    padding: 0;
-    line-height: 25px;
-  }
-  header .container ul li a::before {
-    display: none;
-  }
-}
+@media (max-width: 825px) { .burger.move { margin-top: 0; }
+  header { top: -225px; height: 225px; background-color: rgba(0, 0, 0, 0.3); }
+  header .container ul { margin-bottom: 0; text-align: right; padding-right: 90px; }
+  header .container ul li { display: block; }
+  header .container ul li a { padding: 0; line-height: 25px; }
+  header .container ul li a::before { display: none; } }
 
-@media (max-width: 640px) {
-  .burger {
-    right: 20px;
-  }
-  header .container ul {
-    padding-right: 70px;
-  }
-}
-
-/*# sourceMappingURL=header.css.map */
+@media (max-width: 640px) { .burger { right: 20px; }
+  header .container ul { padding-right: 70px; } }
