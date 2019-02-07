@@ -201,11 +201,12 @@ header .container-nav {
 
 header .container {
   width: 100%;
+  height: 100%;
   max-width: 1300px;
 }
 
 header .container img {
-  padding-left: 7%;
+  padding: 7px 0 7px 7%;
 }
 
 header .container ul {
@@ -245,7 +246,7 @@ header .container ul li a::before {
 }
 
 header .container ul li a:hover {
-  color: #B28657;
+  /*color: $gold;*/
 }
 
 header .container ul li a:hover::before {
